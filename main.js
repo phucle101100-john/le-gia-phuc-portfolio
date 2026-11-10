@@ -266,3 +266,38 @@ document.querySelectorAll(".admin-gallery").forEach((g) => {
   document.getElementById("lang-toggle")?.addEventListener("click", () => setTimeout(update, 0));
   if (top) top.addEventListener("click", () => window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }));
 })();
+
+// Replay number and chart animations every time a block comes back into view
+(() => {
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce || !("IntersectionObserver" in window)) return;
+  const fmt = new Intl.NumberFormat("en-US");
+  const run = (el) => {
+    const end = +el.dataset.count;
+    const pre = el.dataset.prefix ? new DOMParser().parseFromString(el.dataset.prefix, "text/html").body.textContent : "";
+    const suf = el.dataset.suffix || "";
+    const t0 = performance.now(), dur = 1500;
+    const step = (t) => {
+      const k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = pre + fmt.format(Math.round(end * e)) + suf;
+      if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      const el = en.target;
+      if (en.isIntersecting) {
+        if (el.dataset.seen === "out") {
+          el.classList.add("in");
+          el.querySelectorAll("[data-count]").forEach(run);
+        }
+        el.dataset.seen = "in";
+      } else if (el.dataset.seen === "in") {
+        el.dataset.seen = "out";
+        el.classList.remove("in");
+      }
+    });
+  }, { threshold: 0.2 });
+  document.querySelectorAll(".metric, .kpi, .lb-card, .fbv, .mech").forEach((el) => io.observe(el));
+})();

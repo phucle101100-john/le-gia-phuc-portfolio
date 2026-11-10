@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
   <canvas id="net" aria-hidden="true"></canvas>
@@ -60,32 +60,48 @@
     <!-- PRODUCT -->
     <section id="product" class="section">
       <h2 data-i18n="10" class="reveal"><span class="num">01</span> <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork.net</a> <small>2020 – 2025 · Product Owner</small></h2>
-      <p data-i18n="11" class="sub reveal">Job-matching and big-data analytics platform for the blockchain industry in Vietnam. I owned vision, roadmap and delivery, took requests straight from the CEO, from business customers (employers) and from candidates, and designed and shipped every feature for all three roles on Bubble, wired to Zapier and Make over REST APIs, with custom code where Bubble hit its limits.</p>
+      <p data-i18n="400" class="sub reveal">Job-matching platform for Vietnam’s blockchain industry. I owned it end to end: vision, roadmap and delivery.</p>
+
+      <div class="pflow reveal" aria-label="How requests became features">
+        <div class="pf-col">
+          <div data-i18n="401" class="pf-node src">CEO</div>
+          <div data-i18n="402" class="pf-node src">Business customers</div>
+          <div data-i18n="403" class="pf-node src">Candidates</div>
+        </div>
+        <div class="pf-arrow" aria-hidden="true"><i></i></div>
+        <div data-i18n="404" class="pf-node me">Me<small>spec · build · test · release</small></div>
+        <div class="pf-arrow" aria-hidden="true"><i></i></div>
+        <div data-i18n="405" class="pf-node tool">Bubble<small>+ Zapier / Make via REST API, custom code at the limits</small></div>
+        <div class="pf-arrow" aria-hidden="true"><i></i></div>
+        <div data-i18n="406" class="pf-node out">3 roles<small>candidates · employers · admins</small></div>
+      </div>
+
       <div class="roles">
         <article class="role reveal tilt">
           <div class="role-ico">👤</div>
           <h3 data-i18n="12">Candidates</h3>
-          <p data-i18n="13">Job feed, advanced search, one-click apply, CV profile, references attached to applications, community forum.</p>
+          <p data-i18n="407" class="chipline"><span>Job feed</span><span>Advanced search</span><span>1-click apply</span><span>CV profile</span><span>References</span><span>Forum</span></p>
         </article>
         <article class="role reveal tilt">
           <div class="role-ico">🏢</div>
           <h3 data-i18n="14">Employers</h3>
-          <p data-i18n="15">Company page, job posting, paid HOT placement, credit-based CV search with configurable CV scoring, affiliate codes for a free CV-view package.</p>
+          <p data-i18n="408" class="chipline"><span>Company page</span><span>Job posting</span><span>Paid HOT slot</span><span>Credit CV search</span><span>CV scoring</span><span>Affiliate codes</span></p>
         </article>
         <article class="role reveal tilt">
           <div class="role-ico">🛡️</div>
           <h3 data-i18n="16">Admins</h3>
-          <p data-i18n="17">Sub-admin permission rules, dashboards, request handling, and a personal view of pending tasks and live campaigns.</p>
+          <p data-i18n="409" class="chipline"><span>Sub-admin rights</span><span>Dashboards</span><span>Request handling</span><span>My pending tasks</span><span>Live campaigns</span></p>
         </article>
       </div>
-      <ul class="facts reveal">
-        <li data-i18n="301">Shipped large features in under 2 working days, the fastest within 1 day.</li>
-        <li data-i18n="302">As the only builder, worked directly with the no-code platform's support team to improve the builder itself: hidden elements stopped querying their data lists, and page state now loads server-side, one way, so users can no longer reach the database directly.</li>
-        <li data-i18n="18">Kept infrastructure cost (Bubble Workload Units) inside the company budget while meeting UI/UX specs.</li>
-        <li data-i18n="19">Monitored Bubble and Make logs hourly to trace and fix production errors.</li>
-        <li data-i18n="20">Wrote HLD and SLD documents in BPMN (draw.io) for company handover.</li>
-        <li data-i18n="21">During a funding and staffing cut, re-scoped the roadmap with the board, dropped non-critical features and fast-tracked the release needed to train new staff on schedule.</li>
-      </ul>
+
+      <div class="badges">
+        <div class="badge reveal"><i aria-hidden="true">⚡</i><div data-i18n="410"><b>&lt; 2 days per large feature</b><small>fastest: 1 day</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">🛠️</i><div data-i18n="411"><b>Improved the no-code builder</b><small>hidden elements stop querying · one-way server-side state</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">💰</i><div data-i18n="412"><b>Platform cost inside budget</b><small>Bubble Workload Units</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">⏱️</i><div data-i18n="413"><b>Hourly log monitoring</b><small>Bubble + Make, production errors</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">📐</i><div data-i18n="414"><b>HLD / SLD in BPMN</b><small>for company handover</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">✂️</i><div data-i18n="415"><b>Re-scoped roadmap in a funding cut</b><small>release for new staff shipped on time</small></div></div>
+      </div>
     </section>
 
     <!-- MECHANICS -->
@@ -147,18 +163,18 @@
     <!-- AGENTS -->
     <section id="agents" class="section agents">
       <h2 data-i18n="70" class="reveal"><span class="num">03</span> How I ship with AI agents <small>BlockchainWork v2, 2026</small></h2>
-      <p data-i18n="71" class="sub reveal">The dev team is me: one person. Requests come straight from the CEO and from business customers; I turn each into a spec with its edge cases and test cases, direct AI coding agents that build it in parallel, then test against the spec and release. Since April 2026 this is how <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork</a> is being rebuilt from Bubble into an AI-powered v2. The agents work inside guardrails they cannot switch off, and risky steps wait for a human.</p>
+      <p data-i18n="420" class="sub reveal">The dev team is me. Requests from the CEO and customers → spec and test cases → AI agents build in parallel → I test and release. <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork</a> has been rebuilt this way since April 2026, inside guardrails the agents cannot switch off.</p>
 
 
       <div class="pipeline reveal" id="pipeline">
         <svg class="wires" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 5 H100"/></svg>
-        <div class="step" data-i="0"><b>1</b><h4 data-i18n="75">Orchestrator session</h4><p data-i18n="76">Reads the handover notes first, splits work: one session per feature, each under a 1M-token context budget.</p></div>
-        <div class="step" data-i="1"><b>2</b><h4 data-i18n="77">Code map</h4><p data-i18n="78">A generated map answers “which files must I read?” per table, endpoint or page, instead of reading the whole repo.</p></div>
-        <div class="step" data-i="2"><b>3</b><h4 data-i18n="79">Feature session → draft</h4><p data-i18n="80">Builds the feature end to end in its own copy of the code, runs lint, type checks and the test cases locally, then opens a draft for review.</p></div>
-        <div class="step" data-i="3"><b>4</b><h4>CI</h4><p data-i18n="82">Drafts get a cheap check; “ready” triggers the full run. Rule checks fail the build if architecture rules are broken.</p></div>
-        <div class="step" data-i="4"><b>5</b><h4 data-i18n="83">Independent review</h4><p data-i18n="84">A separate agent that did not write the code reviews the diff. The author re-verifies each finding and posts a QC report pinned to the commit SHA.</p></div>
-        <div class="step" data-i="5"><b>6</b><h4 data-i18n="85">Label gate</h4><p data-i18n="86">The orchestrator re-checks and adds the QC label. Risky areas need a second label that only a human may add.</p></div>
-        <div class="step" data-i="6"><b>7</b><h4 data-i18n="87">Merge &amp; deploy</h4><p data-i18n="88">Merge only through one exact command pattern. Production database changes are drafted by the agent and run by a person.</p></div>
+        <div class="step" data-i="0" tabindex="0"><b>1</b><em class="ico" aria-hidden="true">🧭</em><h4 data-i18n="75">Orchestrator session</h4><p data-i18n="76">Reads the handover notes first, splits work: one session per feature, each under a 1M-token context budget.</p></div>
+        <div class="step" data-i="1" tabindex="0"><b>2</b><em class="ico" aria-hidden="true">🗺️</em><h4 data-i18n="77">Code map</h4><p data-i18n="78">A generated map answers “which files must I read?” per table, endpoint or page, instead of reading the whole repo.</p></div>
+        <div class="step" data-i="2" tabindex="0"><b>3</b><em class="ico" aria-hidden="true">🧩</em><h4 data-i18n="79">Feature session → draft</h4><p data-i18n="80">Builds the feature end to end in its own copy of the code, runs lint, type checks and the test cases locally, then opens a draft for review.</p></div>
+        <div class="step" data-i="3" tabindex="0"><b>4</b><em class="ico" aria-hidden="true">🔁</em><h4>CI</h4><p data-i18n="82">Drafts get a cheap check; “ready” triggers the full run. Rule checks fail the build if architecture rules are broken.</p></div>
+        <div class="step" data-i="4" tabindex="0"><b>5</b><em class="ico" aria-hidden="true">🔍</em><h4 data-i18n="83">Independent review</h4><p data-i18n="84">A separate agent that did not write the code reviews the diff. The author re-verifies each finding and posts a QC report pinned to the commit SHA.</p></div>
+        <div class="step" data-i="5" tabindex="0"><b>6</b><em class="ico" aria-hidden="true">🏷️</em><h4 data-i18n="85">Label gate</h4><p data-i18n="86">The orchestrator re-checks and adds the QC label. Risky areas need a second label that only a human may add.</p></div>
+        <div class="step" data-i="6" tabindex="0"><b>7</b><em class="ico" aria-hidden="true">🚀</em><h4 data-i18n="87">Merge &amp; deploy</h4><p data-i18n="88">Merge only through one exact command pattern. Production database changes are drafted by the agent and run by a person.</p></div>
       </div>
 
       <h3 data-i18n="89" class="h3 reveal">Guardrails the agents cannot talk their way around</h3>
@@ -166,35 +182,35 @@
         <article class="guard reveal">
           <div class="term"><span class="prompt">$</span> git push origin main<br><span class="out deny">✖ blocked by hook: direct push to a protected branch</span></div>
           <h4 data-i18n="91">Pre-tool-use hooks</h4>
-          <p data-i18n="92">Every shell command an agent runs passes through a hook first. It blocks direct pushes to protected branches, merges that skip QC, writes to the production database, reading environment secret files, and any deploy other than the one allowed service. The hooks have their own unit tests in CI.</p>
+          <p data-i18n="421">Every shell command passes a hook first: no direct push, no QC skip, no production writes, no secret reads.</p>
         </article>
         <article class="guard reveal">
           <div class="term"><span class="prompt">$</span> merge --exact-commit &lt;sha&gt;<br><span class="out ok">✔ QC passed for this commit · CI green · up to date</span></div>
           <h4 data-i18n="94">Merge gate</h4>
-          <p data-i18n="95">A merge goes through only if the change has the QC label, the latest QC report for its exact head commit says PASS, every CI check is green, and the branch already contains the newest base commit. Changes to migrations, CI, auth or agent config also need the human-only approval label.</p>
+          <p data-i18n="422">Merge only with QC PASS for the exact commit, green CI, an up-to-date branch, and a human label for risky areas.</p>
         </article>
         <article class="guard reveal">
           <div class="term"><span class="prompt">rule</span> browser → database? <span class="deny">never</span><br><span class="prompt">rule</span> auth SDK outside adapter? <span class="deny">CI red</span></div>
           <h4 data-i18n="97">Decision records + rules checked by machine</h4>
-          <p data-i18n="98">Architecture decisions are written down before code. The parts a machine can check are enforced by CI on every change, so a rule cannot quietly drift.</p>
+          <p data-i18n="423">Decisions written before code; what a machine can check, CI checks on every change.</p>
         </article>
       </div>
 
       <h3 data-i18n="99" class="h3 reveal">Habits that keep the output honest</h3>
-      <ul class="habits">
-        <li data-i18n="100" class="reveal"><b>Evidence levels.</b> Every status line says whether it was <em>measured</em>, <em>reported</em> by a person, or <em>assumed</em>, with a date.</li>
-        <li data-i18n="101" class="reveal"><b>One source of truth per topic.</b> Other docs link to it instead of copying, after a copied status once misled a report.</li>
-        <li data-i18n="102" class="reveal"><b>v1 is the floor.</b> v2 screens are compared to v1 step by step, including back, cancel and role-switch paths.</li>
-        <li data-i18n="103" class="reveal"><b>Human runs production.</b> Agents draft SQL for production; a person runs it after review.</li>
-        <li data-i18n="104" class="reveal"><b>Feedback becomes memory.</b> When I correct an agent, the lesson is written to persistent memory so the next session starts with it.</li>
-        <li data-i18n="105" class="reveal"><b>No new spend.</b> Agents cannot upgrade plans or create paid resources without approval.</li>
-      </ul>
+      <div class="badges small">
+        <div class="badge reveal"><i aria-hidden="true">📏</i><div data-i18n="424"><b>Evidence levels</b><small>measured · reported · assumed</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">📌</i><div data-i18n="425"><b>One source of truth</b><small>others link, never copy</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">🧱</i><div data-i18n="426"><b>v1 is the floor</b><small>compared step by step</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">🧑‍💻</i><div data-i18n="427"><b>Humans run production</b><small>agents only draft SQL</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">🧠</i><div data-i18n="428"><b>Feedback → memory</b><small>next session starts with it</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">🚫</i><div data-i18n="429"><b>No new spend</b><small>no paid resources without approval</small></div></div>
+      </div>
     </section>
 
     <!-- SDLC -->
     <section id="sdlc" class="section">
       <h2 data-i18n="106" class="reveal"><span class="num">04</span> A standard lifecycle before full automation <small>my feedback → a mechanism → a measured result</small></h2>
-      <p data-i18n="107" class="sub reveal">Agents were not handed full autonomy on day one. Each time I caught a problem, the fix had to be a check the machine runs every time, not a promise from the agent. The lifecycle below is what those checks add up to.</p>
+      <p data-i18n="430" class="sub reveal">No full autonomy on day one. Each problem I caught became a check the machine runs every time.</p>
 
       <div class="cycle reveal" id="cycle" aria-label="Development lifecycle">
         <ol>
@@ -212,41 +228,38 @@
         <div data-i18n="118" class="loop-note">↺ every “Learn” feeds the next “Spec”</div>
       </div>
 
-      <div class="fb-list">
-        <article class="fb reveal">
+      <div class="fb-grid">
+        <article class="fbv reveal">
           <div data-i18n="119" class="fb-q">“CI is eating the build-minutes budget.”</div>
-          <div class="fb-body">
-            <p data-i18n="120"><b>Measured first:</b> usage was close to the monthly quota and CI had been blocked once. Billed minutes ran well above real run time, because every job rounds up and every merge re-ran everything.</p>
-            <p data-i18n="121"><b>Mechanism:</b> drafts run a light check; the full run starts only when a change is marked ready; merging only rebuilds the code map; container images build only when their files change; documentation-only changes run just formatting; the generated code map stopped being committed, so parallel changes stopped conflicting and re-running.</p>
+          <div class="hbars">
+            <div class="hb bad"><span data-i18n="431">billed minutes</span><i style="--w:100%"></i><b>100%</b></div>
+            <div class="hb "><span data-i18n="432">real run time</span><i style="--w:78%"></i><b>≈78%</b></div>
           </div>
+          <div class="tags"><span data-i18n="433" class="tagc">drafts: light check</span><span data-i18n="434" class="tagc">full run only when ready</span><span data-i18n="435" class="tagc">images build on change</span><span data-i18n="436" class="tagc">docs: format only</span></div>
         </article>
-        <article class="fb reveal">
+        <article class="fbv reveal">
           <div data-i18n="122" class="fb-q">“Why is the main check slow and nobody speeds it up?”</div>
-          <div class="fb-body">
-            <p data-i18n="123"><b>Measured per step:</b> the test runner built a browser DOM for every file and used one thread on a two-core runner.</p>
-            <p data-i18n="124"><b>Fix:</b> plain Node by default, DOM only for component tests. Tests 118.7 s → 60.1 s; the whole job ~305–330 s → 218 s. Two other ideas were measured and dropped because the gain was too small. Rule kept: any job over ~4 minutes gets timed step by step.</p>
-            <div data-i18n="125" class="mini-bars" aria-hidden="true"><span style="--w:100%">before</span><span class="after" style="--w:68%">after</span></div>
+          <div class="hbars">
+            <div class="hb bad"><span data-i18n="437">tests · before</span><i style="--w:100%"></i><b>118.7 s</b></div>
+            <div class="hb good"><span data-i18n="438">tests · after</span><i style="--w:51%"></i><b>60.1 s</b></div>
+            <div class="hb bad"><span data-i18n="439">whole job · before</span><i style="--w:100%"></i><b>~318 s</b></div>
+            <div class="hb good"><span data-i18n="440">whole job · after</span><i style="--w:69%"></i><b>218 s</b></div>
           </div>
+          <p data-i18n="441" class="fb-line">Fix: DOM only for component tests. Rule: time every job over ~4 min step by step.</p>
         </article>
-        <article class="fb reveal">
+        <article class="fbv reveal">
           <div data-i18n="126" class="fb-q">“Find dead code and duplicated logic, don’t just add more.”</div>
-          <div class="fb-body">
-            <p data-i18n="127"><b>Mechanism:</b> CI reports unused files and exports (knip), duplicated blocks of 30+ lines (jscpd) and dead Python (vulture) in every full run. The independent reviewer must hunt dead code and duplicate logic by what the code does, not only by name.</p>
-            <p data-i18n="128"><b>Result:</b> cleanup rounds removed unused components and exports, a leftover API skeleton, and a duplicated form block, until knip reported nothing.</p>
-          </div>
+          <div class="tools"><span>knip</span><span>jscpd</span><span>vulture</span><em>+</em><span data-i18n="442">independent reviewer</span></div>
+          <div class="zero"><b>0</b><span data-i18n="443">unused-code findings after the cleanup rounds</span></div>
         </article>
-        <article class="fb reveal">
+        <article class="fbv reveal">
           <div data-i18n="129" class="fb-q">“Test it yourself, along the real flow.”</div>
-          <div class="fb-body">
-            <p data-i18n="130"><b>Mechanism:</b> a verify skill makes the agent drive the browser on v1 and v2 side by side, step by step per role, including back, reload and switching flows; public pages are measured at 1440 px and 375 px. The agent asks me only to log in, never to check for it.</p>
-            <p data-i18n="131"><b>Why:</b> a green CI and a 200 response did not catch a missing review block or a wrong “field missing” error; walking the flow did.</p>
-          </div>
+          <div class="devices" aria-hidden="true"><span class="dv desk">1440 px</span><span class="dv mob">375 px</span><span class="dv sw">v1 ⇄ v2</span></div>
+          <div class="tags"><span data-i18n="444" class="tagc">per role</span><span data-i18n="445" class="tagc">back · reload · switch flow</span><span data-i18n="446" class="tagc">I only log in</span></div>
         </article>
-        <article class="fb reveal">
+        <article class="fbv reveal">
           <div data-i18n="132" class="fb-q">“Give me a mechanism, not a promise.”</div>
-          <div class="fb-body">
-            <p data-i18n="133"><b>Mechanism:</b> merge rights went to agents only behind a hook-enforced gate: QC report for the exact commit, CI green, branch up to date, and a human-only label for risky areas. Full autonomy waits until stronger platform-level controls are in place.</p>
-          </div>
+          <ul class="checks"><li data-i18n="447">QC report for the exact commit</li><li data-i18n="448">CI green</li><li data-i18n="449">Branch up to date</li><li data-i18n="450">Human label for risky areas</li></ul>
         </article>
       </div>
     </section>
@@ -254,7 +267,7 @@
     <!-- USAGE -->
     <section id="usage" class="section">
       <h2 data-i18n="134" class="reveal"><span class="num">05</span> Sessions, handover and token budget <small>measured from session transcripts, 10 Nov 2026</small></h2>
-      <p data-i18n="135" class="sub reveal">An agent forgets everything between sessions and slows down as its context fills. So I treat context like a budget and make handover a written artifact, not a chat memory.</p>
+      <p data-i18n="461" class="sub reveal">Agents forget between sessions and slow down as context fills. So context is a budget, and handover is written down.</p>
 
       <div class="handover reveal" aria-label="How a session hands over to the next">
         <div class="ho-col">
@@ -268,13 +281,13 @@
         </div>
         <div class="ho-store">
           <h4 data-i18n="138">What survives a session</h4>
-          <ul>
-            <li data-i18n="139"><b>Handover notes</b> read first by every session: status by requirement, decisions locked, next steps in order, traps already hit.</li>
-            <li data-i18n="140"><b>Shared notes folder</b> where sessions leave hand-over notes and large findings instead of pasting them into chat.</li>
-            <li data-i18n="141"><b>Persistent memory</b>: one fact per file, including every correction I gave, so the next session starts with it.</li>
-            <li data-i18n="142"><b>Decision records and a change log</b> for every architecture or infrastructure decision.</li>
-            <li data-i18n="143"><b>The change itself</b>: description, QC report pinned to a commit, CI result.</li>
-          </ul>
+          <div class="tiles">
+            <div class="badge reveal"><i aria-hidden="true">📝</i><div data-i18n="462"><b>Handover notes</b><small>read first, every session</small></div></div>
+            <div class="badge reveal"><i aria-hidden="true">📁</i><div data-i18n="463"><b>Shared notes</b><small>findings, not chat</small></div></div>
+            <div class="badge reveal"><i aria-hidden="true">🧠</i><div data-i18n="464"><b>Memory</b><small>every correction kept</small></div></div>
+            <div class="badge reveal"><i aria-hidden="true">📜</i><div data-i18n="465"><b>Decision records</b><small>+ change log</small></div></div>
+            <div class="badge reveal"><i aria-hidden="true">🔀</i><div data-i18n="466"><b>The change itself</b><small>QC report · CI result</small></div></div>
+          </div>
         </div>
       </div>
 
@@ -292,16 +305,16 @@
       </figure>
 
       <div class="rules3">
-        <article class="reveal"><h4 data-i18n="151">Budget before assigning</h4><p data-i18n="152">The orchestrator estimates each session: files the code map says to read, plus room for history and test output. Near 1M means split or narrow the scope.</p></article>
-        <article class="reveal"><h4 data-i18n="153">Fewest tokens in total</h4><p data-i18n="154">Default is one session per feature across DB, API, web and tests. Every new session pays a fixed cost to read the rules and shared code, so splitting a 100k job into five is waste.</p></article>
-        <article class="reveal"><h4 data-i18n="155">Rotate long sessions</h4><p data-i18n="156">The orchestrator has run since 14 Oct and compacted its context 13 times. A child session that grows very long finishes its current change, then new work starts in a fresh session.</p></article>
+        <article class="reveal"><h4 data-i18n="151">Budget before assigning</h4><p data-i18n="468">Estimate tokens per session first; near 1M → split or narrow.</p></article>
+        <article class="reveal"><h4 data-i18n="153">Fewest tokens in total</h4><p data-i18n="469">One session per feature; five tiny sessions waste the fixed reading cost.</p></article>
+        <article class="reveal"><h4 data-i18n="155">Rotate long sessions</h4><p data-i18n="470">Orchestrator running since 14 Oct, compacted 13×; long child sessions hand over to fresh ones.</p></article>
       </div>
     </section>
 
     <!-- V1 TO V2 -->
     <section id="v2" class="section">
       <h2 data-i18n="157" class="reveal"><span class="num">06</span> v1 → v2: an AI-powered rebuild</h2>
-      <p data-i18n="158" class="sub reveal">v2 is built by AI agents under my direction, with one rule: copy v1 about 95%. The 5% that changes is where speed, privacy or maintainability demanded it. Anything else that differs from v1 counts as a bug.</p>
+      <p data-i18n="471" class="sub reveal">Built by AI agents under my direction. Rule: copy v1 about 95%; change only for speed, privacy or maintainability.</p>
 
       <div class="compare reveal">
         <figure>
@@ -314,13 +327,14 @@
         </figure>
       </div>
 
-      <div class="improve">
-        <article class="reveal"><span class="from">Popups</span><span class="to">Sub-pages with their own URL</span><p data-i18n="159">Every editor and detail view can be linked, bookmarked and reached with the back button.</p></article>
-        <article class="reveal"><span class="from">One admin role</span><span class="to">Role-based permissions</span><p data-i18n="160">Sub-admin roles with separate rights for jobs, CVs, statistics and logs; the menu shows only what a role may use.</p></article>
-        <article class="reveal"><span class="from">Contact data everywhere</span><span class="to">Personal data behind a permission</span><p data-i18n="161">Applicant lists show no name, email or phone. Opening a candidate’s personal data needs its own permission and each view is logged.</p></article>
-        <article class="reveal"><span class="from">Scattered history</span><span class="to">One audit log</span><p data-i18n="162">Admin actions and job status changes in one filterable log.</p></article>
-        <article class="reveal"><span class="from">Platform file storage</span><span class="to">Private files, in-page preview</span><p data-i18n="163">CV files are served only to people allowed to see them, with PDF/DOCX preview inside the page.</p></article>
-        <article class="reveal"><span class="from">Workload Unit budget</span><span class="to">Own code, own database</span><p data-i18n="164">No per-workflow platform cost, and access rules are enforced inside the database, not only in the UI.</p></article>
+      <div class="vs reveal">
+        <div class="vs-h"><span class="tag">v1 · Bubble</span><span class="tag new">v2 · AI-powered</span></div>
+        <div class="vs-r"><span class="x">✕</span><span class="from">Popups</span><span class="ok">✓</span><span class="to">Sub-pages with their own URL</span></div>
+        <div class="vs-r"><span class="x">✕</span><span class="from">One admin role</span><span class="ok">✓</span><span class="to">Role-based permissions</span></div>
+        <div class="vs-r"><span class="x">✕</span><span class="from">Contact data everywhere</span><span class="ok">✓</span><span class="to">Personal data behind a permission</span></div>
+        <div class="vs-r"><span class="x">✕</span><span class="from">Scattered history</span><span class="ok">✓</span><span class="to">One audit log</span></div>
+        <div class="vs-r"><span class="x">✕</span><span class="from">Platform file storage</span><span class="ok">✓</span><span class="to">Private files, in-page preview</span></div>
+        <div class="vs-r"><span class="x">✕</span><span class="from">Workload Unit budget</span><span class="ok">✓</span><span class="to">Own code, own database</span></div>
       </div>
       <div class="admin-gallery reveal" id="ntd-gallery">
         <h3 data-i18n="165" class="h3">The employer area, v1 → v2 <small class="muted">· drag the handle to compare</small></h3>
@@ -357,7 +371,7 @@
     <!-- LANG BIANG -->
     <section id="langbiang" class="section">
       <h2 data-i18n="310" class="reveal"><span class="num">07</span> Lang Biang EZ Water <small>2020 – 2025 · Sales Director, owner of the sales platform</small></h2>
-      <p data-i18n="311" class="sub reveal">Bottled alkaline mineral water from the Lang Biang plateau in Lam Dong, sold from 280 ml bottles to 19 L jugs and distributed as far as Hanoi and the northern provinces from 2022. Next to sales, I owned the company’s internal sales platform as its product owner. Its users were distributors, the sales team, the warehouse and the factory planner. The systems are internal, so this part is described, not shown.</p>
+      <p data-i18n="480" class="sub reveal">Alkaline mineral water from Lang Biang, Lam Dong, distributed to Hanoi and the North from 2022. Besides sales, I owned the internal sales platform as product owner. Internal systems, so described, not shown.</p>
 
       <div class="lb-flow reveal" aria-label="Order tracking from factory to distributor">
         <div data-i18n="211" class="lb-node">Order<small>website · phone · social</small></div>
@@ -374,40 +388,26 @@
       <div class="lb-grid">
         <article class="lb-card reveal">
           <h3 data-i18n="312">Order-to-cash platform</h3>
-          <dl class="pps">
-            <dt data-i18n="313">Problem</dt><dd data-i18n="314">High-value orders (100M+ VND each) came in by website, phone and social channels, and nobody could see where an order was or what was still unpaid.</dd>
-            <dt data-i18n="315">Product</dt><dd data-i18n="316">A sales website and one order record shared by every channel, with order, stock and receivable status from factory dispatch to distributor intake.</dd>
-            <dt data-i18n="317">Result</dt><dd data-i18n="318">Every order tracked end to end, with stock and receivables in sync across channels.</dd>
-          </dl>
+          <div class="chain"><div class="ch p"><i aria-hidden="true">⚠</i><span data-i18n="481">Orders by web, phone, social: status unclear</span></div><div class="ch s"><i aria-hidden="true">⚙</i><span data-i18n="482">One shared order record, factory → distributor</span></div><div class="ch r"><i aria-hidden="true">✓</i><span data-i18n="483">Every order tracked, stock + debt in sync</span></div></div>
           <ul class="lb-track" aria-hidden="true"><li data-i18n="218">Order placed<span>website · phone · social</span></li><li data-i18n="219">Dispatched from factory</li><li data-i18n="220">In warehouse</li><li data-i18n="221">Received by distributor</li><li data-i18n="222">Paid, receivable closed</li></ul>
         </article>
         <article class="lb-card reveal">
           <h3 data-i18n="319">Distributor scoring for production planning</h3>
-          <dl class="pps">
-            <dt data-i18n="313">Problem</dt><dd data-i18n="320">The factory had to guess when distributors would reorder.</dd>
-            <dt data-i18n="315">Product</dt><dd data-i18n="321">RFM scoring of distributors and prospects from successful orders, plus a reorder-time prediction.</dd>
-            <dt data-i18n="317">Result</dt><dd data-i18n="322">Production planned from predicted reorders instead of guesses.</dd>
-          </dl>
+          <div class="chain"><div class="ch p"><i aria-hidden="true">⚠</i><span data-i18n="484">Factory guessed reorder timing</span></div><div class="ch s"><i aria-hidden="true">⚙</i><span data-i18n="485">RFM scoring + reorder prediction</span></div><div class="ch r"><i aria-hidden="true">✓</i><span data-i18n="486">Production planned from predictions</span></div></div>
           <div data-i18n="225" class="rfm" aria-hidden="true"><span>R</span><span>F</span><span>M</span><em>→ next reorder</em></div>
         </article>
         <article class="lb-card reveal">
           <h3 data-i18n="323">Referral with cashback</h3>
-          <dl class="pps">
-            <dt data-i18n="315">Product</dt><dd data-i18n="324">A commission-code programme with cashback, so partners earn for every order they bring.</dd>
-            <dt data-i18n="325">Metric</dt><dd data-i18n="326">Performance measured per affiliate and per channel.</dd>
-          </dl>
+          <div class="chain"><div class="ch p"><i aria-hidden="true">⚙</i><span data-i18n="487">Commission codes with cashback</span></div><div class="ch s"><i aria-hidden="true">📊</i><span data-i18n="488">Measured per affiliate and channel</span></div></div>
         </article>
         <article class="lb-card reveal">
           <h3 data-i18n="327">Acquisition funnel</h3>
-          <dl class="pps">
-            <dt data-i18n="315">Product</dt><dd data-i18n="328">A content campaign aimed at distributors, and a search-to-chat journey from Google into Zalo.</dd>
-            <dt data-i18n="317">Result</dt><dd data-i18n="329">10 distributors signed, each worth about 1B VND in customer lifetime revenue; top 5 on Google for “nước lang biang”.</dd>
-          </dl>
+          <div class="chain"><div class="ch p"><i aria-hidden="true">⚙</i><span data-i18n="489">Content campaign + Google → Zalo journey</span></div><div class="ch s"><i aria-hidden="true">✓</i><span data-i18n="490">10 distributors, ~1B VND LTV each</span></div></div>
           <div data-i18n="230" class="lb-big"><b data-count="10">10</b><span>distributors</span><b data-count="1" data-suffix="B">1B</b><span>VND lifetime revenue each</span></div>
         </article>
         <article class="lb-card reveal">
           <h3 data-i18n="231">Search to chat</h3>
-          <p data-i18n="330">Search brings buyers in; the website hands them to Zalo, where sales close the order.</p>
+          <p data-i18n="491">Google → website → Zalo → order.</p>
           <div data-i18n="233" class="serp" aria-hidden="true"><span class="q">nước lang biang</span><span class="r">#1</span><span class="r">#2</span><span class="r">#3</span><span class="r">#4</span><span class="r me">#5 · us</span></div>
         </article>
       </div>
@@ -444,7 +444,7 @@
     <img alt="">
   </div>
 
-  <script src="main.js?v=7"></script>
-  <script src="i18n.js?v=7"></script>
+  <script src="main.js?v=8"></script>
+  <script src="i18n.js?v=8"></script>
 </body>
 </html>
