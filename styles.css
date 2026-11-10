@@ -701,3 +701,6 @@ main .typed, main .chipline { text-align: start; }
 /* mono labels and very narrow columns stay left-aligned (justify would leave wide gaps) */
 main .eyebrow, .mech .note, .flow li, .ho-node small, .lb-node small, .lb-track li, .cap span, main .typed { text-align: start; }
 .cycle li span { text-align: start; }
+/* intro text spans the same width as the boxes below it */
+main .sub { max-width: none; }
+main .lead { max-width: 820px; }
