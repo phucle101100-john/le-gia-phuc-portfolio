@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le Gia Phuc · Product Owner</title>
+  <meta name="description" content="Portfolio of Le Gia Phuc, Product Owner of BlockchainWork.net, and how he builds software with AI agents.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="nav">
+    <a class="brand" href="#top">LGP<span>.</span></a>
+    <nav>
+      <a href="#product">Product</a>
+      <a href="#proof">Live screens</a>
+      <a href="#mechanics">Mechanics</a>
+      <a href="#agents">AI agents</a>
+      <a href="#sdlc">Lifecycle</a>
+      <a href="#usage">Sessions</a>
+      <a href="#v2">v1 → v2</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow reveal">Product Owner · Self-service platforms · Campaign tools · Gamified mechanics</p>
+      <h1 class="reveal">Le Gia Phuc</h1>
+      <p class="typed reveal" aria-live="polite">I <span id="typed"></span><span class="caret">|</span></p>
+      <p class="lead reveal">Sole product lead of <strong>BlockchainWork.net</strong>, a three-sided job platform for candidates, employers and admins. I am a product owner, not a web developer: I take requests from the business, write the spec and the test cases, and ship them myself with AI agents, usually within one sprint.</p>
+      <div class="cta reveal">
+        <a class="btn primary" href="#proof">See the live product</a>
+        <a class="btn ghost" href="#agents">How I use AI agents</a>
+      </div>
+      <div class="stats">
+        <div class="stat reveal"><b data-count="30000" data-suffix="+">0</b><span>registered users, from zero</span></div>
+        <div class="stat reveal"><b data-count="2000">0</b><span>peak concurrent sessions</span></div>
+        <div class="stat reveal"><b data-count="3">0</b><span>user roles designed end to end</span></div>
+        <div class="stat reveal"><b data-count="2" data-prefix="&lt;">0</b><span>working days per large feature</span></div>
+      </div>
+      <a class="scroll-hint" href="#product" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- PRODUCT -->
+    <section id="product" class="section">
+      <h2 class="reveal"><span class="num">01</span> BlockchainWork.net <small>2022 – 2024 · Product Owner</small></h2>
+      <p class="sub reveal">Job-matching and big-data analytics platform for the blockchain industry in Vietnam. I owned vision, roadmap and delivery, took requirements straight from the board, employers and candidates, and designed and shipped every feature for all three roles on Bubble, wired to Zapier and Make over REST APIs, with custom code where Bubble hit its limits.</p>
+      <div class="roles">
+        <article class="role reveal tilt">
+          <div class="role-ico">👤</div>
+          <h3>Candidates</h3>
+          <p>Job feed, advanced search, one-click apply, CV profile, references attached to applications, community forum.</p>
+        </article>
+        <article class="role reveal tilt">
+          <div class="role-ico">🏢</div>
+          <h3>Employers</h3>
+          <p>Company page, job posting, paid HOT placement, credit-based CV search with configurable CV scoring, affiliate codes for a free CV-view package.</p>
+        </article>
+        <article class="role reveal tilt">
+          <div class="role-ico">🛡️</div>
+          <h3>Admins</h3>
+          <p>Sub-admin permission rules, dashboards, request handling, and a personal view of pending tasks and live campaigns.</p>
+        </article>
+      </div>
+      <ul class="facts reveal">
+        <li>Kept infrastructure cost (Bubble Workload Units) inside the company budget while meeting UI/UX specs.</li>
+        <li>Monitored Bubble and Make logs hourly to trace and fix production errors.</li>
+        <li>Wrote HLD and SLD documents in BPMN (draw.io) for company handover.</li>
+        <li>During a funding and staffing cut, re-scoped the roadmap with the board, dropped non-critical features and fast-tracked the release needed to train new staff on schedule.</li>
+      </ul>
+    </section>
+
+    <!-- PROOF -->
+    <section id="proof" class="section">
+      <h2 class="reveal"><span class="num">02</span> Live screens <small>captured from blockchainwork.net, Nov 2026</small></h2>
+      <p class="sub reveal">Public pages of the production v1 site, each paired with the CV line it backs up. Click a screen to enlarge.</p>
+
+      <div class="shots">
+        <figure class="shot reveal">
+          <button class="frame" data-full="assets/screens/01-home.jpg" aria-label="Enlarge: home page">
+            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net</em></span>
+            <img src="assets/screens/01-home.jpg" alt="BlockchainWork home page with separate entry points for job seekers and employers" loading="lazy">
+          </button>
+          <figcaption>
+            <h3>One home, two front doors</h3>
+            <p class="cv">“Led the platform end to end, from zero users to ~30,000 registered users and a peak of 2,000 concurrent sessions.”</p>
+            <p>Separate entry points for job seekers and employers on the same landing page, with search by keyword, industry and city.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="shot reveal flip">
+          <button class="frame" data-full="assets/screens/02-job-feed-hot.jpg" aria-label="Enlarge: job feed with HOT placements">
+            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net · job feed</em></span>
+            <img src="assets/screens/02-job-feed-hot.jpg" alt="Home job feed where paid HOT placements are pinned with a red HOT badge" loading="lazy">
+          </button>
+          <figcaption>
+            <h3>Weighted job feed + paid HOT placement</h3>
+            <p class="cv">“Weighted job-feed ranking and paid ‘HOT’ placement, combining views, saves, posting time and time to expiry.”</p>
+            <p>HOT jobs carry the red badge and sit at the top; the rest of the feed is ordered by the ranking rule.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="shot reveal">
+          <button class="frame" data-full="assets/screens/03-job-detail.jpg" aria-label="Enlarge: job detail page">
+            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net · job detail</em></span>
+            <img src="assets/screens/03-job-detail.jpg" alt="Job detail page with apply, save and like actions, deadline and related jobs" loading="lazy">
+          </button>
+          <figcaption>
+            <h3>Job detail built for the apply funnel</h3>
+            <p class="cv">“Designed and shipped every feature for all three roles on Bubble.”</p>
+            <p>Apply, save and like actions, deadline, company tab and related jobs. Saves and views feed back into the ranking above.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="shot reveal flip">
+          <button class="frame" data-full="assets/screens/04-advanced-search.jpg" aria-label="Enlarge: advanced search">
+            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net · advanced search</em></span>
+            <img src="assets/screens/04-advanced-search.jpg" alt="Advanced job search with salary, remote, work type and level filters and a live update ticker of applications" loading="lazy">
+          </button>
+          <figcaption>
+            <h3>Advanced search + live activity ticker</h3>
+            <p class="cv">“Job-matching and big-data analytics platform serving candidates, employers and system admins.”</p>
+            <p>Filters for currency, salary, remote, work type and level. The “Live Update” ticker shows applications as they happen, social proof driven by platform events.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="shot reveal">
+          <button class="frame" data-full="assets/screens/05-companies.jpg" aria-label="Enlarge: company directory">
+            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net · companies</em></span>
+            <img src="assets/screens/05-companies.jpg" alt="Directory of blockchain companies hiring on the platform" loading="lazy">
+          </button>
+          <figcaption>
+            <h3>Employer side: company directory</h3>
+            <p class="cv">“Took requirements directly from the BOD, employers and candidates.”</p>
+            <p>Featured employers and a searchable company directory, each linking to its company page and open jobs.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="shot reveal flip">
+          <button class="frame" data-full="assets/screens/06-forum-leaderboard.jpg" aria-label="Enlarge: forum and top contributors">
+            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net · forum</em></span>
+            <img src="assets/screens/06-forum-leaderboard.jpg" alt="Blockchain Forum with a Top contributors leaderboard" loading="lazy">
+          </button>
+          <figcaption>
+            <h3>Community + contributor leaderboard</h3>
+            <p class="cv">“Contributor leaderboard ranking candidates by views and engagement over short time windows.”</p>
+            <p>The Blockchain Forum with its “Top contributors” board.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MECHANICS -->
+    <section id="mechanics" class="section">
+      <h2 class="reveal"><span class="num">03</span> Mechanics I designed <small>configurable, not one-off</small></h2>
+      <p class="sub reveal">Some of these live behind employer or admin login. Employer, admin, credit and affiliate screens are in section 07; the diagrams below show how the mechanics work, not real weights or data.</p>
+
+      <div class="mech-grid">
+        <article class="mech reveal">
+          <h3>Weighted feed ranking</h3>
+          <p>Inputs combined into one score; paid HOT placement overrides position.</p>
+          <div class="bars" aria-label="Illustration of ranking inputs">
+            <div class="bar"><span>views</span><i style="--w:72%"></i></div>
+            <div class="bar"><span>saves</span><i style="--w:55%"></i></div>
+            <div class="bar"><span>posting time</span><i style="--w:84%"></i></div>
+            <div class="bar"><span>time to expiry</span><i style="--w:40%"></i></div>
+            <div class="bar total"><span>score</span><i style="--w:92%"></i></div>
+          </div>
+          <p class="note">Illustration only.</p>
+        </article>
+
+        <article class="mech reveal">
+          <h3>Employer credits for CV unlocks</h3>
+          <p>Employers spend credits to unlock high-quality CVs matched to their job descriptions; CV scoring rules are configurable by admins.</p>
+          <div class="credits" aria-hidden="true">
+            <div class="coin">C</div><div class="arrow">→</div>
+            <div class="cv-card"><span class="lock">🔒</span><b class="blurline"></b><b class="blurline s"></b><em>match score</em></div>
+          </div>
+        </article>
+
+        <article class="mech reveal">
+          <h3>Referral &amp; affiliate</h3>
+          <p>Candidates attach a reference to strengthen an application. Affiliate codes give referred employers a free CV-view package.</p>
+          <div class="ref" aria-hidden="true">
+            <span class="node">Partner</span><span class="link"></span><span class="node">Code</span><span class="link"></span><span class="node hot">Free CV views</span>
+          </div>
+        </article>
+
+        <article class="mech reveal">
+          <h3>AI CV analysis with OCR</h3>
+          <p>Personal data anonymised before AI processing, mapped back to each candidate afterwards.</p>
+          <ol class="flow" aria-label="CV pipeline">
+            <li>CV upload</li><li>OCR</li><li class="mask">Strip PII → token</li><li>AI analysis</li><li>Map back to candidate</li>
+          </ol>
+        </article>
+
+        <article class="mech reveal">
+          <h3>Admin tool</h3>
+          <p>Permission rules for sub-admins, dashboards, request handling, and a personal queue of pending tasks and live campaigns.</p>
+        </article>
+
+        <article class="mech reveal">
+          <h3>Campaigns &amp; tracking</h3>
+          <p>Reusable email templates; open and delivery events tracked through the SendGrid API; campaign performance measured with Google Tag Manager.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- AGENTS -->
+    <section id="agents" class="section agents">
+      <h2 class="reveal"><span class="num">04</span> How I ship with AI agents <small>BlockchainWork v2, 2026</small></h2>
+      <p class="sub reveal">No dev team. I collect requests from the business, turn each into a spec with its edge cases and test cases, and direct AI coding agents that build it in parallel. Then I test against the spec and release. Since April 2026 this is how BlockchainWork is being rebuilt from Bubble into an AI-powered v2. The agents work inside guardrails they cannot switch off, and risky steps wait for a human.</p>
+
+      <div class="kpis">
+        <div class="kpi reveal"><b data-count="1">0</b><span>person, from business request to release, test cases included</span></div>
+        <div class="kpi reveal"><b data-count="1">0</b><span>sprint to deliver a request (a sprint is 3 working days)</span></div>
+        <div class="kpi reveal"><b data-count="2" data-prefix="&le;">0</b><span>sprints to close the bugs a large scope produces</span></div>
+      </div>
+
+      <div class="pipeline reveal" id="pipeline">
+        <svg class="wires" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 5 H100"/></svg>
+        <div class="step" data-i="0"><b>1</b><h4>Orchestrator session</h4><p>Reads the handover notes first, splits work: one session per feature, each under a 1M-token context budget.</p></div>
+        <div class="step" data-i="1"><b>2</b><h4>Code map</h4><p>A generated map answers “which files must I read?” per table, endpoint or page, instead of reading the whole repo.</p></div>
+        <div class="step" data-i="2"><b>3</b><h4>Feature session → draft</h4><p>Builds the feature end to end in its own copy of the code, runs lint, type checks and the test cases locally, then opens a draft for review.</p></div>
+        <div class="step" data-i="3"><b>4</b><h4>CI</h4><p>Drafts get a cheap check; “ready” triggers the full run. Rule checks fail the build if architecture rules are broken.</p></div>
+        <div class="step" data-i="4"><b>5</b><h4>Independent review</h4><p>A separate agent that did not write the code reviews the diff. The author re-verifies each finding and posts a QC report pinned to the commit SHA.</p></div>
+        <div class="step" data-i="5"><b>6</b><h4>Label gate</h4><p>The orchestrator re-checks and adds the QC label. Risky areas need a second label that only a human may add.</p></div>
+        <div class="step" data-i="6"><b>7</b><h4>Merge &amp; deploy</h4><p>Merge only through one exact command pattern. Production database changes are drafted by the agent and run by a person.</p></div>
+      </div>
+
+      <h3 class="h3 reveal">Guardrails the agents cannot talk their way around</h3>
+      <div class="guards">
+        <article class="guard reveal">
+          <div class="term"><span class="prompt">$</span> git push origin main<br><span class="out deny">✖ blocked by hook: direct push to a protected branch</span></div>
+          <h4>Pre-tool-use hooks</h4>
+          <p>Every shell command an agent runs passes through a hook first. It blocks direct pushes to protected branches, merges that skip QC, writes to the production database, reading environment secret files, and any deploy other than the one allowed service. The hooks have their own unit tests in CI.</p>
+        </article>
+        <article class="guard reveal">
+          <div class="term"><span class="prompt">$</span> merge --exact-commit &lt;sha&gt;<br><span class="out ok">✔ QC passed for this commit · CI green · up to date</span></div>
+          <h4>Merge gate</h4>
+          <p>A merge goes through only if the change has the QC label, the latest QC report for its exact head commit says PASS, every CI check is green, and the branch already contains the newest base commit. Changes to migrations, CI, auth or agent config also need the human-only approval label.</p>
+        </article>
+        <article class="guard reveal">
+          <div class="term"><span class="prompt">rule</span> browser → database? <span class="deny">never</span><br><span class="prompt">rule</span> auth SDK outside adapter? <span class="deny">CI red</span></div>
+          <h4>Decision records + rules checked by machine</h4>
+          <p>Architecture decisions are written down before code. The parts a machine can check are enforced by CI on every change, so a rule cannot quietly drift.</p>
+        </article>
+      </div>
+
+      <h3 class="h3 reveal">Habits that keep the output honest</h3>
+      <ul class="habits">
+        <li class="reveal"><b>Evidence levels.</b> Every status line says whether it was <em>measured</em>, <em>reported</em> by a person, or <em>assumed</em>, with a date.</li>
+        <li class="reveal"><b>One source of truth per topic.</b> Other docs link to it instead of copying, after a copied status once misled a report.</li>
+        <li class="reveal"><b>v1 is the floor.</b> v2 screens are compared to v1 step by step, including back, cancel and role-switch paths.</li>
+        <li class="reveal"><b>Human runs production.</b> Agents draft SQL for production; a person runs it after review.</li>
+        <li class="reveal"><b>Feedback becomes memory.</b> When I correct an agent, the lesson is written to persistent memory so the next session starts with it.</li>
+        <li class="reveal"><b>No new spend.</b> Agents cannot upgrade plans or create paid resources without approval.</li>
+      </ul>
+    </section>
+
+    <!-- SDLC -->
+    <section id="sdlc" class="section">
+      <h2 class="reveal"><span class="num">05</span> A standard lifecycle before full automation <small>my feedback → a mechanism → a measured result</small></h2>
+      <p class="sub reveal">Agents were not handed full autonomy on day one. Each time I caught a problem, the fix had to be a check the machine runs every time, not a promise from the agent. The lifecycle below is what those checks add up to.</p>
+
+      <div class="cycle reveal" id="cycle" aria-label="Development lifecycle">
+        <ol>
+          <li><b>Spec</b><span>user story, every branch listed, v1 as the floor</span></li>
+          <li><b>Budget</b><span>code map picks files; token estimate per session</span></li>
+          <li><b>Build</b><span>one session per feature, own copy of the code</span></li>
+          <li><b>Self-test</b><span>local lint, types, tests; agent walks the real flow in a browser</span></li>
+          <li><b>Draft</b><span>cheap CI while iterating</span></li>
+          <li><b>Full CI</b><span>rules, tests, dead-code and duplicate report</span></li>
+          <li><b>Review</b><span>independent agent; QC report pinned to the commit</span></li>
+          <li><b>Gate</b><span>QC label; risky areas need a human label</span></li>
+          <li><b>Release</b><span>merge by exact command; humans run production SQL</span></li>
+          <li><b>Learn</b><span>my correction becomes memory, a hook, a rule or a test</span></li>
+        </ol>
+        <div class="loop-note">↺ every “Learn” feeds the next “Spec”</div>
+      </div>
+
+      <div class="fb-list">
+        <article class="fb reveal">
+          <div class="fb-q">“CI is eating the build-minutes budget.”</div>
+          <div class="fb-body">
+            <p><b>Measured first:</b> usage was close to the monthly quota and CI had been blocked once. Billed minutes ran well above real run time, because every job rounds up and every merge re-ran everything.</p>
+            <p><b>Mechanism:</b> drafts run a light check; the full run starts only when a change is marked ready; merging only rebuilds the code map; container images build only when their files change; documentation-only changes run just formatting; the generated code map stopped being committed, so parallel changes stopped conflicting and re-running.</p>
+          </div>
+        </article>
+        <article class="fb reveal">
+          <div class="fb-q">“Why is the main check slow and nobody speeds it up?”</div>
+          <div class="fb-body">
+            <p><b>Measured per step:</b> the test runner built a browser DOM for every file and used one thread on a two-core runner.</p>
+            <p><b>Fix:</b> plain Node by default, DOM only for component tests. Tests 118.7 s → 60.1 s; the whole job ~305–330 s → 218 s. Two other ideas were measured and dropped because the gain was too small. Rule kept: any job over ~4 minutes gets timed step by step.</p>
+            <div class="mini-bars" aria-hidden="true"><span style="--w:100%">before</span><span class="after" style="--w:68%">after</span></div>
+          </div>
+        </article>
+        <article class="fb reveal">
+          <div class="fb-q">“Find dead code and duplicated logic, don’t just add more.”</div>
+          <div class="fb-body">
+            <p><b>Mechanism:</b> CI reports unused files and exports (knip), duplicated blocks of 30+ lines (jscpd) and dead Python (vulture) in every full run. The independent reviewer must hunt dead code and duplicate logic by what the code does, not only by name.</p>
+            <p><b>Result:</b> cleanup rounds removed unused components and exports, a leftover API skeleton, and a duplicated form block, until knip reported nothing.</p>
+          </div>
+        </article>
+        <article class="fb reveal">
+          <div class="fb-q">“Test it yourself, along the real flow.”</div>
+          <div class="fb-body">
+            <p><b>Mechanism:</b> a verify skill makes the agent drive the browser on v1 and v2 side by side, step by step per role, including back, reload and switching flows; public pages are measured at 1440 px and 375 px. The agent asks me only to log in, never to check for it.</p>
+            <p><b>Why:</b> a green CI and a 200 response did not catch a missing review block or a wrong “field missing” error; walking the flow did.</p>
+          </div>
+        </article>
+        <article class="fb reveal">
+          <div class="fb-q">“Give me a mechanism, not a promise.”</div>
+          <div class="fb-body">
+            <p><b>Mechanism:</b> merge rights went to agents only behind a hook-enforced gate: QC report for the exact commit, CI green, branch up to date, and a human-only label for risky areas. Full autonomy waits until stronger platform-level controls are in place.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- USAGE -->
+    <section id="usage" class="section">
+      <h2 class="reveal"><span class="num">06</span> Sessions, handover and token budget <small>measured from session transcripts, 10 Nov 2026</small></h2>
+      <p class="sub reveal">An agent forgets everything between sessions and slows down as its context fills. So I treat context like a budget and make handover a written artifact, not a chat memory.</p>
+
+      <div class="handover reveal" aria-label="How a session hands over to the next">
+        <div class="ho-col">
+          <div class="ho-node main">Orchestrator session<small>plans, assigns, re-checks, merges</small></div>
+          <div class="ho-pulse" aria-hidden="true"></div>
+          <div class="ho-kids">
+            <div class="ho-node kid">Feature session<small>own copy · own review</small></div>
+            <div class="ho-node kid">Feature session<small>own copy · own review</small></div>
+            <div class="ho-node kid">Feature session<small>own copy · own review</small></div>
+          </div>
+        </div>
+        <div class="ho-store">
+          <h4>What survives a session</h4>
+          <ul>
+            <li><b>Handover notes</b> read first by every session: status by requirement, decisions locked, next steps in order, traps already hit.</li>
+            <li><b>Shared notes folder</b> where sessions leave hand-over notes and large findings instead of pasting them into chat.</li>
+            <li><b>Persistent memory</b>: one fact per file, including every correction I gave, so the next session starts with it.</li>
+            <li><b>Decision records and a change log</b> for every architecture or infrastructure decision.</li>
+            <li><b>The change itself</b>: description, QC report pinned to a commit, CI result.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="kpis usage-kpis">
+        <div class="kpi reveal"><b data-count="55">0</b><span>feature sessions, 16 Oct – 9 Nov 2026</span></div>
+        <div class="kpi reveal"><b data-count="388" data-suffix="k">0</b><span>median peak context per session (of 1M)</span></div>
+        <div class="kpi reveal"><b data-count="52">0</b><span>of 55 finished without hitting the ceiling</span></div>
+      </div>
+
+      <figure class="chart reveal" id="token-chart">
+        <figcaption><b>Peak context of each feature session</b> <span>· one bar per session, in start order · dashed line = 1M ceiling</span></figcaption>
+        <div class="chart-wrap"><div class="yaxis" aria-hidden="true"><span style="top:0">1M</span><span style="top:25%">750k</span><span style="top:50%">500k</span><span style="top:75%">250k</span><span style="top:100%">0</span></div><svg id="token-svg" role="img" aria-label="Bar chart: peak context tokens per feature session, median 388 thousand, three sessions reached the 1 million ceiling"></svg></div>
+        <div class="xaxis" aria-hidden="true"><span>16 Oct</span><span>28 Oct</span><span>9 Nov</span></div>
+        <div class="legend"><span><i class="lg a"></i>&lt; 300k</span><span><i class="lg b"></i>300k – 600k</span><span><i class="lg c"></i>600k – 900k</span><span><i class="lg d"></i>reached the ceiling, auto-compacted</span></div>
+      </figure>
+
+      <div class="rules3">
+        <article class="reveal"><h4>Budget before assigning</h4><p>The orchestrator estimates each session: files the code map says to read, plus room for history and test output. Near 1M means split or narrow the scope.</p></article>
+        <article class="reveal"><h4>Fewest tokens in total</h4><p>Default is one session per feature across DB, API, web and tests. Every new session pays a fixed cost to read the rules and shared code, so splitting a 100k job into five is waste.</p></article>
+        <article class="reveal"><h4>Rotate long sessions</h4><p>The orchestrator has run since 14 Oct and compacted its context 13 times. A child session that grows very long finishes its current change, then new work starts in a fresh session.</p></article>
+      </div>
+    </section>
+
+    <!-- V1 TO V2 -->
+    <section id="v2" class="section">
+      <h2 class="reveal"><span class="num">07</span> v1 → v2: an AI-powered rebuild</h2>
+      <p class="sub reveal">v2 is built by AI agents under my direction, with one rule: copy v1 about 95%. The 5% that changes is where speed, privacy or maintainability demanded it. Anything else that differs from v1 counts as a bug.</p>
+
+      <div class="compare reveal">
+        <figure>
+          <span class="tag">v1 · Bubble</span>
+          <button class="frame" data-full="assets/screens/01-home.jpg" aria-label="Enlarge: v1 home"><span class="dots"><i></i><i></i><i></i><em>v1</em></span><img src="assets/screens/01-home.jpg" alt="v1 home page on Bubble" loading="lazy"></button>
+        </figure>
+        <figure>
+          <span class="tag new">v2 · AI-powered</span>
+          <button class="frame" data-full="assets/screens/07-v2-home.jpg" aria-label="Enlarge: v2 home"><span class="dots"><i></i><i></i><i></i><em>v2</em></span><img src="assets/screens/07-v2-home.jpg" alt="v2 home page rebuilt in code, same layout as v1" loading="lazy"></button>
+        </figure>
+      </div>
+
+      <div class="improve">
+        <article class="reveal"><span class="from">Popups</span><span class="to">Sub-pages with their own URL</span><p>Every editor and detail view can be linked, bookmarked and reached with the back button.</p></article>
+        <article class="reveal"><span class="from">One admin role</span><span class="to">Role-based permissions</span><p>Sub-admin roles with separate rights for jobs, CVs, statistics and logs; the menu shows only what a role may use.</p></article>
+        <article class="reveal"><span class="from">Contact data everywhere</span><span class="to">Personal data behind a permission</span><p>Applicant lists show no name, email or phone. Opening a candidate’s personal data needs its own permission and each view is logged.</p></article>
+        <article class="reveal"><span class="from">Scattered history</span><span class="to">One audit log</span><p>Admin actions and job status changes in one filterable log.</p></article>
+        <article class="reveal"><span class="from">Platform file storage</span><span class="to">Private files, in-page preview</span><p>CV files are served only to people allowed to see them, with PDF/DOCX preview inside the page.</p></article>
+        <article class="reveal"><span class="from">Workload Unit budget</span><span class="to">Own code, own database</span><p>No per-workflow platform cost, and access rules are enforced inside the database, not only in the UI.</p></article>
+      </div>
+      <div class="admin-gallery reveal" id="ntd-gallery">
+        <h3 class="h3">The employer area, v1 → v2 <small class="muted">· drag the handle to compare</small></h3>
+        <div class="atabs" role="tablist" aria-label="The employer area, v1 → v2"><button role="tab" data-i="0" aria-selected="true">Dashboard</button><button role="tab" data-i="1" aria-selected="false">Job posts</button><button role="tab" data-i="2" aria-selected="false">Search CV</button><button role="tab" data-i="3" aria-selected="false">Applicants</button><button role="tab" data-i="4" aria-selected="false">Credits & plans</button><button role="tab" data-i="5" aria-selected="false">Company profile</button></div>
+        <div class="astage">
+          <div class="cmp" style="--pos:50%">
+            <span class="dots"><i></i><i></i><i></i><em>employer</em></span>
+            <div class="cmp-view"><div class="pane on" data-i="0"><img class="v2" src="assets/screens/v2-ntd-dashboard.jpg" alt="v2 employer area: Dashboard" loading="lazy"><img class="v1" src="assets/screens/v1-ntd-dashboard.jpg" alt="v1 employer area: Dashboard" loading="lazy"></div><div class="pane" data-i="1"><img class="v2" src="assets/screens/v2-ntd-jobs.jpg" alt="v2 employer area: Job posts" loading="lazy"><img class="v1" src="assets/screens/v1-ntd-jobs.jpg" alt="v1 employer area: Job posts" loading="lazy"></div><div class="pane" data-i="2"><img class="v2" src="assets/screens/v2-ntd-cvsearch.jpg" alt="v2 employer area: Search CV" loading="lazy"><img class="v1" src="assets/screens/v1-ntd-cvsearch.jpg" alt="v1 employer area: Search CV" loading="lazy"></div><div class="pane" data-i="3"><img class="v2" src="assets/screens/v2-ntd-talents.jpg" alt="v2 employer area: Applicants" loading="lazy"><img class="v1" src="assets/screens/v1-ntd-talents.jpg" alt="v1 employer area: Applicants" loading="lazy"></div><div class="pane" data-i="4"><img class="v2" src="assets/screens/v2-ntd-plan.jpg" alt="v2 employer area: Credits & plans" loading="lazy"><img class="v1" src="assets/screens/v1-ntd-plan.jpg" alt="v1 employer area: Credits & plans" loading="lazy"></div><div class="pane" data-i="5"><img class="v2" src="assets/screens/v2-ntd-company.jpg" alt="v2 employer area: Company profile" loading="lazy"><img class="v1" src="assets/screens/v1-ntd-company.jpg" alt="v1 employer area: Company profile" loading="lazy"></div>
+              <span class="lbl l1">v1 · Bubble</span><span class="lbl l2">v2 · AI-powered</span>
+              <div class="handle" aria-hidden="true"><span>⇆</span></div>
+              <input type="range" min="0" max="100" value="50" aria-label="Compare v1 and v2: drag right to show more v1">
+            </div>
+          </div>
+          <div class="acaps"><div class="cap on" data-i="0"><b>Dashboard</b><p><span class="t1">v1</span>Account and company status, the latest Search CV candidates, live jobs and quick links.</p><p><span class="t2">v2</span>Same layout (the 95% rule), plus count tiles for live jobs and applications.</p></div><div class="cap" data-i="1"><b>Job posts</b><p><span class="t1">v1</span>Open Job switch, job list with status, edit and duplicate.</p><p><span class="t2">v2</span>Same list; saving and submitting for review is one step, and a failed submit keeps you on the form.</p></div><div class="cap" data-i="2"><b>Search CV</b><p><span class="t1">v1</span>Candidate photo, name and location on every card, with a daily open quota.</p><p><span class="t2">v2</span>Cards lead with the CV title and an initial instead of a photo; opening a CV spends credits priced by the admin.</p></div><div class="cap" data-i="3"><b>Applicants</b><p><span class="t1">v1</span>One list with name, email and phone, a review chip and the hiring step.</p><p><span class="t2">v2</span>Filter by job, by review result and by hiring step (received → screening → test → interview → offer → hired); newest applicants first.</p></div><div class="cap" data-i="4"><b>Credits & plans</b><p><span class="t1">v1</span>Credit balance, current plan and the package table on one long page.</p><p><span class="t2">v2</span>Credit and plan cards side by side; an order goes to the admin’s approval queue.</p></div><div class="cap" data-i="5"><b>Company profile</b><p><span class="t1">v1</span>Logo, cover, contact, industries and address in one form.</p><p><span class="t2">v2</span>Same fields with industry chips; business-licence files are updated through an admin request.</p></div><div class="abar"><span></span></div></div>
+        </div>
+      </div>
+      <div class="admin-gallery reveal" id="admin-gallery">
+        <h3 class="h3">The admin tool, v1 → v2 <small class="muted">· drag the handle to compare</small></h3>
+        <div class="atabs" role="tablist" aria-label="Admin screens"><button role="tab" data-i="0" aria-selected="true">Statistics</button><button role="tab" data-i="1" aria-selected="false">Job Manage</button><button role="tab" data-i="2" aria-selected="false">Company Manage</button><button role="tab" data-i="3" aria-selected="false">Users</button><button role="tab" data-i="4" aria-selected="false">CV Manage</button><button role="tab" data-i="5" aria-selected="false">Plan Management</button><button role="tab" data-i="6" aria-selected="false">Activity Logs</button><button role="tab" data-i="7" aria-selected="false">Affiliate (v1)</button></div>
+        <div class="astage">
+          <div class="cmp" style="--pos:50%">
+            <span class="dots"><i></i><i></i><i></i><em>admin</em></span>
+            <div class="cmp-view"><div class="pane on" data-i="0"><img class="v2" src="assets/screens/v2-admin-stats.jpg" alt="v2 admin: Statistics" loading="lazy"><img class="v1" src="assets/screens/v1-admin-stats.jpg" alt="v1 admin: Statistics" loading="lazy"></div><div class="pane" data-i="1"><img class="v2" src="assets/screens/v2-admin-jobs.jpg" alt="v2 admin: Job Manage" loading="lazy"><img class="v1" src="assets/screens/v1-admin-jobs.jpg" alt="v1 admin: Job Manage" loading="lazy"></div><div class="pane" data-i="2"><img class="v2" src="assets/screens/v2-admin-companies.jpg" alt="v2 admin: Company Manage" loading="lazy"><img class="v1" src="assets/screens/v1-admin-companies.jpg" alt="v1 admin: Company Manage" loading="lazy"></div><div class="pane" data-i="3"><img class="v2" src="assets/screens/v2-admin-users.jpg" alt="v2 admin: Users" loading="lazy"><img class="v1" src="assets/screens/v1-admin-users.jpg" alt="v1 admin: Users" loading="lazy"></div><div class="pane" data-i="4"><img class="v2" src="assets/screens/v2-admin-cvs.jpg" alt="v2 admin: CV Manage" loading="lazy"><img class="v1" src="assets/screens/v1-admin-cvs.jpg" alt="v1 admin: CV Manage" loading="lazy"></div><div class="pane" data-i="5"><img class="v2" src="assets/screens/v2-admin-plans.jpg" alt="v2 admin: Plan Management" loading="lazy"><img class="v1" src="assets/screens/v1-admin-plans.jpg" alt="v1 admin: Plan Management" loading="lazy"></div><div class="pane" data-i="6"><img class="v2" src="assets/screens/v2-admin-logs.jpg" alt="v2 admin: Activity Logs" loading="lazy"><img class="v1" src="assets/screens/v1-admin-logs.jpg" alt="v1 admin: Activity Logs" loading="lazy"></div><div class="pane solo" data-i="7"><img class="v1" src="assets/screens/v1-admin-affiliate.jpg" alt="v1 admin: Affiliate (v1)" loading="lazy"></div>
+              <span class="lbl l1">v1 · Bubble</span><span class="lbl l2">v2 · AI-powered</span>
+              <div class="handle" aria-hidden="true"><span>⇆</span></div>
+              <input type="range" min="0" max="100" value="50" aria-label="Compare v1 and v2: drag right to show more v1">
+            </div>
+          </div>
+          <div class="acaps"><div class="cap on" data-i="0"><b>Statistics</b><p><span class="t1">v1</span>One table per topic, each with its own date range.</p><p><span class="t2">v2</span>Summary cards that link to the detail, status bars, one date filter for the whole page.</p></div><div class="cap" data-i="1"><b>Job Manage</b><p><span class="t1">v1</span>Filters include the poster’s email and phone; bulk export of applicants to Excel.</p><p><span class="t2">v2</span>Same layout and status colours (the 95% rule), no contact filters, no bulk personal-data export; the status chip opens the review block.</p></div><div class="cap" data-i="2"><b>Company Manage</b><p><span class="t1">v1</span>The list shows each company’s phone and email.</p><p><span class="t2">v2</span>Country, province and website instead; quick actions to post a job, edit, or open the public page.</p></div><div class="cap" data-i="3"><b>Users</b><p><span class="t1">v1</span>One list mixing roles, with email and phone on every row.</p><p><span class="t2">v2</span>Separate employer and candidate tabs, email only, plus the support centre on the same page.</p></div><div class="cap" data-i="4"><b>CV Manage</b><p><span class="t1">v1</span>Candidate name, email and phone in the list; an AI summary per CV with a disclaimer.</p><p><span class="t2">v2</span>CV title only. Personal data needs its own permission and every view is logged; the admin sets each CV’s credit price.</p></div><div class="cap" data-i="5"><b>Plan Management</b><p><span class="t1">v1</span>Employer avatar, email and phone next to credits and plan.</p><p><span class="t2">v2</span>Company-level credits with expiry, a filter for pending purchase requests, and an approval log.</p></div><div class="cap" data-i="6"><b>Activity Logs</b><p><span class="t1">v1</span>A log filtered by account type, action and date.</p><p><span class="t2">v2</span>Admin actions and job status history merged into one filterable log.</p></div><div class="cap" data-i="7"><b>Affiliate (v1)</b><p><span class="t1">v1</span>Referral codes, accumulated points, payouts and performance per affiliate.</p><p><span class="t2">v2</span>Not rebuilt in v2 yet.</p></div><div class="abar"><span></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section">
+      <h2 class="reveal"><span class="num">08</span> Toolbox</h2>
+      <div class="chips reveal">
+        <span>Stakeholder discovery</span><span>User stories</span><span>Business rules &amp; edge cases</span><span>BPMN · HLD/SLD</span><span>Roadmap under budget</span>
+        <span>Leaderboards</span><span>Weighted ranking</span><span>Referral &amp; affiliate</span><span>Credits · cashback</span><span>RFM segmentation</span>
+        <span>REST · Graph API</span><span>SQL (MySQL, SQL Server)</span><span>Postman</span><span>Google Tag Manager</span><span>SendGrid events</span>
+        <span>Bubble</span><span>Zapier</span><span>Make</span><span>Claude Code</span><span>Codex</span><span>MCP</span>
+      </div>
+      <p class="sub reveal gamer">Off the clock: Master tier in League of Legends and Teamfight Tactics, which is where my interest in ranking, battle-pass and reward loops comes from.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2 class="reveal">Let’s talk</h2>
+      <p class="sub reveal">Ho Chi Minh City · B.A. E-commerce, Management Information Systems, University of Economics HCMC</p>
+      <a class="btn primary big reveal" href="mailto:phucle101100@gmail.com">phucle101100@gmail.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Le Gia Phuc</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="close" aria-label="Close">×</button>
+    <img alt="">
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
