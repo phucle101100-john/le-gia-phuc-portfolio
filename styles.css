@@ -443,3 +443,10 @@ footer { text-align: center; color: var(--muted); font-size: 13px; padding: 30px
 .lb-track li::before { content: ""; position: absolute; left: 1px; top: 2px; width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--line); background: #0b1222; animation: tick 5s infinite; }
 .lb-track li:nth-child(2)::before { animation-delay: .8s; } .lb-track li:nth-child(3)::before { animation-delay: 1.6s; } .lb-track li:nth-child(4)::before { animation-delay: 2.4s; } .lb-track li:nth-child(5)::before { animation-delay: 3.2s; }
 @keyframes tick { 0%, 10% { background: #0b1222; border-color: var(--line); } 16%, 85% { background: var(--green); border-color: var(--green); box-shadow: 0 0 10px rgba(52,211,153,.5); } 100% { background: #0b1222; border-color: var(--line); } }
+
+/* LANGUAGE TOGGLE */
+.lang-toggle { display: inline-flex; align-items: center; gap: 0; margin-left: 16px; padding: 3px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.04); cursor: pointer; font: 600 12px var(--mono); color: var(--muted); }
+.lang-toggle span { padding: 4px 10px; border-radius: 999px; transition: background .25s, color .25s; }
+.lang-toggle[data-lang="en"] span[data-l="en"], .lang-toggle[data-lang="vi"] span[data-l="vi"] { background: var(--cyan); color: #04101f; }
+.lang-toggle:hover { border-color: var(--cyan); }
+.nav nav + .lang-toggle { flex: 0 0 auto; }

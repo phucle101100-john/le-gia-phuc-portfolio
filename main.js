@@ -2,17 +2,31 @@
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Typed roles in the hero
-  const phrases = [
-    "turn one-off requests into reusable product capabilities.",
-    "design ranking, credits, leaderboards and referral loops.",
-    "took a job platform from zero to ~30,000 users.",
-    "ship business requests myself with AI agents, in one sprint."
-  ];
+  const PHRASES = {
+    en: [
+      "turn one-off requests into reusable product capabilities.",
+      "design ranking, credits, leaderboards and referral loops.",
+      "took a job platform from zero to ~30,000 users.",
+      "ship business requests myself with AI agents, in one sprint."
+    ],
+    vi: [
+      "biến yêu cầu lẻ thành tính năng dùng lại được.",
+      "thiết kế xếp hạng, credit, bảng xếp hạng và vòng giới thiệu.",
+      "đưa một sàn việc làm từ 0 lên ~30.000 người dùng.",
+      "tự triển khai yêu cầu kinh doanh bằng AI agent, trong một sprint."
+    ]
+  };
+  let phrases = PHRASES.en;
   const typed = document.getElementById("typed");
+  let p = 0, i = 0, del = false;
+  window.__setTypedLang = (lang) => {
+    phrases = PHRASES[lang] || PHRASES.en;
+    p = 0; i = 0; del = false;
+    if (reduce) typed.textContent = phrases[0];
+  };
   if (reduce) {
     typed.textContent = phrases[0];
   } else {
-    let p = 0, i = 0, del = false;
     const tick = () => {
       const s = phrases[p];
       typed.textContent = s.slice(0, i);
