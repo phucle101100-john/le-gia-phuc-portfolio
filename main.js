@@ -4,16 +4,16 @@
   // Typed roles in the hero
   const PHRASES = {
     en: [
-      "turn one-off requests into reusable product capabilities.",
-      "design ranking, credits, leaderboards and referral loops.",
-      "took a job platform from zero to ~30,000 users.",
-      "ship business requests myself with AI agents, in one sprint."
+      "Turns one-off requests into reusable product capabilities.",
+      "Designs ranking, credits, leaderboards and referral loops.",
+      "Took a job platform from zero to ~30,000 users.",
+      "Ships business requests with AI agents, in one sprint."
     ],
     vi: [
-      "biến yêu cầu lẻ thành tính năng dùng lại được.",
-      "thiết kế xếp hạng, credit, bảng xếp hạng và vòng giới thiệu.",
-      "đưa một sàn việc làm từ 0 lên ~30.000 người dùng.",
-      "tự triển khai yêu cầu kinh doanh bằng AI agent, trong một sprint."
+      "Biến yêu cầu lẻ thành tính năng dùng lại được.",
+      "Thiết kế xếp hạng, credit, bảng xếp hạng và vòng giới thiệu.",
+      "Đưa một sàn việc làm từ 0 lên ~30.000 người dùng.",
+      "Triển khai yêu cầu kinh doanh bằng AI agent, trong một sprint."
     ]
   };
   let phrases = PHRASES.en;
@@ -69,15 +69,26 @@
   document.querySelectorAll(".reveal, .mech, .guard").forEach((el) => io.observe(el));
 
   // Pipeline: highlight steps in turn while visible
+  // The active step shows its detail; it advances slowly, and hovering a step holds it open.
   const steps = [...document.querySelectorAll(".pipeline .step")];
-  let si = 0, timer = null;
-  const run = () => {
-    steps.forEach((s, k) => s.classList.toggle("active", k === si));
-    si = (si + 1) % steps.length;
-  };
+  const STEP_MS = 5000;
+  let si = 0, timer = null, held = false, visibleP = false;
+  const show = (k) => { si = k; steps.forEach((s, j) => s.classList.toggle("active", j === k)); };
+  const next = () => { if (!held) show((si + 1) % steps.length); };
+  const start = () => { clearInterval(timer); timer = null; if (!reduce && visibleP) timer = setInterval(next, STEP_MS); };
+  steps.forEach((s, k) => {
+    const hold = () => { held = true; clearInterval(timer); timer = null; show(k); s.classList.add("held"); };
+    const release = () => { held = false; s.classList.remove("held"); show(si); start(); };
+    s.addEventListener("mouseenter", hold);
+    s.addEventListener("mouseleave", release);
+    s.addEventListener("focus", hold);
+    s.addEventListener("blur", release);
+    s.addEventListener("click", hold);
+  });
   new IntersectionObserver(([en]) => {
-    if (en.isIntersecting && !timer) { run(); if (!reduce) timer = setInterval(run, 1600); }
-    else if (!en.isIntersecting && timer) { clearInterval(timer); timer = null; }
+    const was = visibleP; visibleP = en.isIntersecting;
+    if (visibleP && !was) { show(si); start(); }
+    else if (!visibleP) { clearInterval(timer); timer = null; }
   }, { threshold: 0.2 }).observe(document.getElementById("pipeline"));
 
   // Tilt on role cards (pointer devices only)

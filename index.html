@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
   <canvas id="net" aria-hidden="true"></canvas>
@@ -35,11 +35,11 @@
     <section class="hero">
       <p data-i18n="1" class="eyebrow reveal">Product Owner · Self-service platforms · Campaign tools · Gamified mechanics</p>
       <h1 class="reveal">Le Gia Phuc</h1>
-      <p class="typed reveal" aria-live="polite">I <span id="typed"></span><span class="caret">|</span></p>
-      <p data-i18n="4" class="lead reveal">Sole product lead of <strong><a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork.net</a></strong>, a three-sided job platform for candidates, employers and admins. I am a product owner, not a web developer: I take requests from the business, write the spec and the test cases, and ship them myself with AI agents, usually within one sprint.</p>
+      <p class="typed reveal" aria-live="polite"><span id="typed"></span><span class="caret">|</span></p>
+      <p data-i18n="4" class="lead reveal">Sole product lead of <strong><a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork.net</a></strong>, a three-sided job platform for candidates, employers and admins. A product owner, not a web developer: takes requests from the business, writes the spec and the test cases, and ships them with AI agents, usually within one sprint.</p>
       <div data-i18n="5" class="cta reveal">
         <a class="btn primary" href="#impact">See the results</a>
-        <a class="btn ghost" href="#agents">How I use AI agents</a>
+        <a class="btn ghost" href="#agents">How AI agents are used</a>
       </div>
       <a class="scroll-hint" href="#product" aria-label="Scroll down"><span></span></a>
     </section>
@@ -48,19 +48,19 @@
     <section id="impact" class="impact">
       <h2 data-i18n="303" class="impact-title reveal">Results in numbers</h2>
       <div class="metrics">
-        <div class="metric reveal"><b data-count="30000" data-suffix="+">30,000+</b><span data-i18n="304">registered users on BlockchainWork, from zero</span></div>
-        <div class="metric reveal"><b data-count="2000">2,000</b><span data-i18n="305">peak concurrent sessions</span></div>
-        <div class="metric ringed reveal"><div class="ringbox"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg" cx="60" cy="60" r="52" style="--p:1"/></svg><b data-count="100" data-suffix="%">100%</b></div><span data-i18n="306">of employers post jobs on their own from their second posting, no support needed</span></div>
-        <div class="metric ringed reveal"><div class="ringbox"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg" cx="60" cy="60" r="52" style="--p:1"/></svg><b data-count="100" data-suffix="%">100%</b></div><span data-i18n="307">of candidate and employer profiles fully filled out at first onboarding, with detailed information</span></div>
-        <div class="metric reveal"><b data-count="1">1</b><span data-i18n="308">sprint from business request to release (a sprint is 3 working days), test cases included</span></div>
-        <div class="metric reveal"><b data-count="2" data-prefix="&le;">&le;2</b><span data-i18n="309">sprints to close the bugs a large scope produces</span></div>
+        <div class="metric reveal"><b data-count="30000" data-suffix="+">30,000+</b><span data-i18n="304">registered users, grown from zero</span></div>
+        <div class="metric reveal"><b data-count="2000">2,000</b><span data-i18n="305">peak concurrent users (CCU)</span></div>
+        <div class="metric ringed reveal"><div class="ringbox"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg" cx="60" cy="60" r="52" style="--p:1"/></svg><b data-count="100" data-suffix="%">100%</b></div><span data-i18n="306">employer self-serve posting rate from the 2nd job post, no support needed</span></div>
+        <div class="metric ringed reveal"><div class="ringbox"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg" cx="60" cy="60" r="52" style="--p:1"/></svg><b data-count="100" data-suffix="%">100%</b></div><span data-i18n="307">profile completion rate at first onboarding, candidates and employers, with detailed data</span></div>
+        <div class="metric reveal"><b data-count="1">1</b><span data-i18n="308">sprint lead time from request to release (1 sprint = 3 working days), QA included</span></div>
+        <div class="metric reveal"><b data-count="2" data-prefix="&le;">&le;2</b><span data-i18n="309">sprints to resolve defects from large-scope releases</span></div>
       </div>
     </section>
 
     <!-- PRODUCT -->
     <section id="product" class="section">
       <h2 data-i18n="10" class="reveal"><span class="num">01</span> <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork.net</a> <small>2020 – 2025 · Product Owner</small></h2>
-      <p data-i18n="400" class="sub reveal">Job-matching platform for Vietnam’s blockchain industry. I owned it end to end: vision, roadmap and delivery.</p>
+      <p data-i18n="400" class="sub reveal">Job-matching platform for Vietnam’s blockchain industry. Owned end to end: vision, roadmap and delivery.</p>
 
       <div class="pflow reveal" aria-label="How requests became features">
         <div class="pf-col">
@@ -69,7 +69,7 @@
           <div data-i18n="403" class="pf-node src">Candidates</div>
         </div>
         <div class="pf-arrow" aria-hidden="true"><i></i></div>
-        <div data-i18n="404" class="pf-node me">Me<small>spec · build · test · release</small></div>
+        <div data-i18n="404" class="pf-node me">Product Owner<small>spec · build · test · release</small></div>
         <div class="pf-arrow" aria-hidden="true"><i></i></div>
         <div data-i18n="405" class="pf-node tool">Bubble<small>+ Zapier / Make via REST API, custom code at the limits</small></div>
         <div class="pf-arrow" aria-hidden="true"><i></i></div>
@@ -90,29 +90,29 @@
         <article class="role reveal tilt">
           <div class="role-ico">🛡️</div>
           <h3 data-i18n="16">Admins</h3>
-          <p data-i18n="409" class="chipline"><span>Sub-admin rights</span><span>Dashboards</span><span>Request handling</span><span>My pending tasks</span><span>Live campaigns</span></p>
+          <p data-i18n="409" class="chipline"><span>Sub-admin rights</span><span>Dashboards</span><span>Request handling</span><span>Pending tasks</span><span>Live campaigns</span></p>
         </article>
       </div>
 
       <div class="badges">
-        <div class="badge reveal"><i aria-hidden="true">⚡</i><div data-i18n="410"><b>&lt; 2 days per large feature</b><small>fastest: 1 day</small></div></div>
-        <div class="badge reveal"><i aria-hidden="true">🛠️</i><div data-i18n="411"><b>Improved the no-code builder</b><small>hidden elements stop querying · one-way server-side state</small></div></div>
-        <div class="badge reveal"><i aria-hidden="true">💰</i><div data-i18n="412"><b>Platform cost inside budget</b><small>Bubble Workload Units</small></div></div>
-        <div class="badge reveal"><i aria-hidden="true">⏱️</i><div data-i18n="413"><b>Hourly log monitoring</b><small>Bubble + Make, production errors</small></div></div>
-        <div class="badge reveal"><i aria-hidden="true">📐</i><div data-i18n="414"><b>HLD / SLD in BPMN</b><small>for company handover</small></div></div>
-        <div class="badge reveal"><i aria-hidden="true">✂️</i><div data-i18n="415"><b>Re-scoped roadmap in a funding cut</b><small>release for new staff shipped on time</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">⚡</i><div data-i18n="410"><b>Lead time &lt; 2 days per major feature</b><small>fastest: 1 day</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">🛠️</i><div data-i18n="411"><b>Platform improvements with the vendor</b><small>no queries from hidden elements · one-way server-side state</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">💰</i><div data-i18n="412"><b>Infra cost within budget</b><small>Bubble Workload Units</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">⏱️</i><div data-i18n="413"><b>Hourly production monitoring</b><small>Bubble + Make logs, incident fixes</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">📐</i><div data-i18n="414"><b>HLD / SLD in BPMN</b><small>handover documentation</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">✂️</i><div data-i18n="415"><b>Roadmap re-prioritisation</b><small>under budget and headcount cuts, release on time</small></div></div>
       </div>
     </section>
 
     <!-- MECHANICS -->
     <section id="mechanics" class="section">
-      <h2 data-i18n="42" class="reveal"><span class="num">02</span> Mechanics I designed <small>configurable, not one-off</small></h2>
+      <h2 data-i18n="42" class="reveal"><span class="num">02</span> Mechanics designed <small>configurable, not one-off</small></h2>
       <p data-i18n="43" class="sub reveal">Some of these live behind employer or admin login. Employer, admin, credit and affiliate screens are in section 06; the diagrams below show how the mechanics work, not real weights or data.</p>
 
       <div class="mech-grid">
         <article class="mech reveal">
-          <h3 data-i18n="44">Weighted feed ranking</h3>
-          <p data-i18n="45">Inputs combined into one score; paid HOT placement overrides position.</p>
+          <h3 data-i18n="44">Weighted ranking algorithm</h3>
+          <p data-i18n="45">Engagement signals combined into one score; paid HOT placement (monetization) overrides rank.</p>
           <div class="bars" aria-label="Illustration of ranking inputs">
             <div data-i18n="46" class="bar"><span>views</span><i style="--w:72%"></i></div>
             <div data-i18n="47" class="bar"><span>saves</span><i style="--w:55%"></i></div>
@@ -124,7 +124,7 @@
         </article>
 
         <article class="mech reveal">
-          <h3 data-i18n="52">Employer credits for CV unlocks</h3>
+          <h3 data-i18n="52">Virtual currency: credits for CV unlocks</h3>
           <p data-i18n="53">Employers spend credits to unlock high-quality CVs matched to their job descriptions; CV scoring rules are configurable by admins.</p>
           <div class="credits" aria-hidden="true">
             <div class="coin">C</div><div class="arrow">→</div>
@@ -133,7 +133,7 @@
         </article>
 
         <article class="mech reveal">
-          <h3 data-i18n="56">Referral &amp; affiliate</h3>
+          <h3 data-i18n="56">Referral &amp; affiliate growth loop</h3>
           <p data-i18n="57">Candidates attach a reference to strengthen an application. Affiliate codes give referred employers a free CV-view package.</p>
           <div data-i18n="58" class="ref" aria-hidden="true">
             <span class="node">Partner</span><span class="link"></span><span class="node">Code</span><span class="link"></span><span class="node hot">Free CV views</span>
@@ -149,12 +149,12 @@
         </article>
 
         <article class="mech reveal">
-          <h3 data-i18n="66">Admin tool</h3>
+          <h3 data-i18n="66">Back-office &amp; RBAC</h3>
           <p data-i18n="67">Permission rules for sub-admins, dashboards, request handling, and a personal queue of pending tasks and live campaigns.</p>
         </article>
 
         <article class="mech reveal">
-          <h3 data-i18n="68">Campaigns &amp; tracking</h3>
+          <h3 data-i18n="68">CRM campaigns &amp; event tracking</h3>
           <p data-i18n="69">Reusable email templates; open and delivery events tracked through the SendGrid API; campaign performance measured with Google Tag Manager.</p>
         </article>
       </div>
@@ -162,18 +162,18 @@
 
     <!-- AGENTS -->
     <section id="agents" class="section agents">
-      <h2 data-i18n="70" class="reveal"><span class="num">03</span> How I ship with AI agents <small>BlockchainWork v2, 2026</small></h2>
-      <p data-i18n="420" class="sub reveal">The dev team is me. Requests from the CEO and customers → spec and test cases → AI agents build in parallel → I test and release. <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork</a> has been rebuilt this way since April 2026, inside guardrails the agents cannot switch off.</p>
+      <h2 data-i18n="70" class="reveal"><span class="num">03</span> Shipping with AI agents <small>BlockchainWork v2, 2026</small></h2>
+      <p data-i18n="420" class="sub reveal">A one-person dev team. Requests from the CEO and customers → spec and test cases → AI agents build in parallel → tested and released. <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork</a> has been rebuilt this way since April 2026, inside guardrails the agents cannot switch off.</p>
 
 
       <div class="pipeline reveal" id="pipeline">
         <svg class="wires" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 5 H100"/></svg>
         <div class="step" data-i="0" tabindex="0"><b>1</b><em class="ico" aria-hidden="true">🧭</em><h4 data-i18n="75">Orchestrator session</h4><p data-i18n="76">Reads the handover notes first, splits work: one session per feature, each under a 1M-token context budget.</p></div>
-        <div class="step" data-i="1" tabindex="0"><b>2</b><em class="ico" aria-hidden="true">🗺️</em><h4 data-i18n="77">Code map</h4><p data-i18n="78">A generated map answers “which files must I read?” per table, endpoint or page, instead of reading the whole repo.</p></div>
-        <div class="step" data-i="2" tabindex="0"><b>3</b><em class="ico" aria-hidden="true">🧩</em><h4 data-i18n="79">Feature session → draft</h4><p data-i18n="80">Builds the feature end to end in its own copy of the code, runs lint, type checks and the test cases locally, then opens a draft for review.</p></div>
+        <div class="step" data-i="1" tabindex="0"><b>2</b><em class="ico" aria-hidden="true">🗺️</em><h4 data-i18n="77">Code map · impact analysis</h4><p data-i18n="78">A generated map answers “which files to read?” per table, endpoint or page, instead of reading the whole repo.</p></div>
+        <div class="step" data-i="2" tabindex="0"><b>3</b><em class="ico" aria-hidden="true">🧩</em><h4 data-i18n="79">Feature branch → draft PR</h4><p data-i18n="80">Builds the feature end to end in its own copy of the code, runs lint, type checks and the test cases locally, then opens a draft for review.</p></div>
         <div class="step" data-i="3" tabindex="0"><b>4</b><em class="ico" aria-hidden="true">🔁</em><h4>CI</h4><p data-i18n="82">Drafts get a cheap check; “ready” triggers the full run. Rule checks fail the build if architecture rules are broken.</p></div>
-        <div class="step" data-i="4" tabindex="0"><b>5</b><em class="ico" aria-hidden="true">🔍</em><h4 data-i18n="83">Independent review</h4><p data-i18n="84">A separate agent that did not write the code reviews the diff. The author re-verifies each finding and posts a QC report pinned to the commit SHA.</p></div>
-        <div class="step" data-i="5" tabindex="0"><b>6</b><em class="ico" aria-hidden="true">🏷️</em><h4 data-i18n="85">Label gate</h4><p data-i18n="86">The orchestrator re-checks and adds the QC label. Risky areas need a second label that only a human may add.</p></div>
+        <div class="step" data-i="4" tabindex="0"><b>5</b><em class="ico" aria-hidden="true">🔍</em><h4 data-i18n="83">Independent code review</h4><p data-i18n="84">A separate agent that did not write the code reviews the diff. The author re-verifies each finding and posts a QC report pinned to the commit SHA.</p></div>
+        <div class="step" data-i="5" tabindex="0"><b>6</b><em class="ico" aria-hidden="true">🏷️</em><h4 data-i18n="85">Quality gate</h4><p data-i18n="86">The orchestrator re-checks and adds the QC label. Risky areas need a second label that only a human may add.</p></div>
         <div class="step" data-i="6" tabindex="0"><b>7</b><em class="ico" aria-hidden="true">🚀</em><h4 data-i18n="87">Merge &amp; deploy</h4><p data-i18n="88">Merge only through one exact command pattern. Production database changes are drafted by the agent and run by a person.</p></div>
       </div>
 
@@ -201,7 +201,7 @@
         <div class="badge reveal"><i aria-hidden="true">📏</i><div data-i18n="424"><b>Evidence levels</b><small>measured · reported · assumed</small></div></div>
         <div class="badge reveal"><i aria-hidden="true">📌</i><div data-i18n="425"><b>One source of truth</b><small>others link, never copy</small></div></div>
         <div class="badge reveal"><i aria-hidden="true">🧱</i><div data-i18n="426"><b>v1 is the floor</b><small>compared step by step</small></div></div>
-        <div class="badge reveal"><i aria-hidden="true">🧑‍💻</i><div data-i18n="427"><b>Humans run production</b><small>agents only draft SQL</small></div></div>
+        <div class="badge reveal"><i aria-hidden="true">🔐</i><div data-i18n="427"><b>Humans run production</b><small>agents only draft SQL</small></div></div>
         <div class="badge reveal"><i aria-hidden="true">🧠</i><div data-i18n="428"><b>Feedback → memory</b><small>next session starts with it</small></div></div>
         <div class="badge reveal"><i aria-hidden="true">🚫</i><div data-i18n="429"><b>No new spend</b><small>no paid resources without approval</small></div></div>
       </div>
@@ -209,23 +209,23 @@
 
     <!-- SDLC -->
     <section id="sdlc" class="section">
-      <h2 data-i18n="106" class="reveal"><span class="num">04</span> A standard lifecycle before full automation <small>my feedback → a mechanism → a measured result</small></h2>
-      <p data-i18n="430" class="sub reveal">No full autonomy on day one. Each problem I caught became a check the machine runs every time.</p>
+      <h2 data-i18n="106" class="reveal"><span class="num">04</span> A standard lifecycle before full automation <small>feedback → a mechanism → a measured result</small></h2>
+      <p data-i18n="430" class="sub reveal">No full autonomy on day one. Each problem caught became a check the machine runs every time.</p>
 
       <div class="cycle reveal" id="cycle" aria-label="Development lifecycle">
         <ol>
-          <li data-i18n="108"><b>Spec</b><span>user story, every branch listed, v1 as the floor</span></li>
-          <li data-i18n="109"><b>Budget</b><span>code map picks files; token estimate per session</span></li>
-          <li data-i18n="110"><b>Build</b><span>one session per feature, own copy of the code</span></li>
-          <li data-i18n="111"><b>Self-test</b><span>local lint, types, tests; agent walks the real flow in a browser</span></li>
-          <li data-i18n="112"><b>Draft</b><span>cheap CI while iterating</span></li>
-          <li data-i18n="113"><b>Full CI</b><span>rules, tests, dead-code and duplicate report</span></li>
-          <li data-i18n="114"><b>Review</b><span>independent agent; QC report pinned to the commit</span></li>
-          <li data-i18n="115"><b>Gate</b><span>QC label; risky areas need a human label</span></li>
-          <li data-i18n="116"><b>Release</b><span>merge by exact command; humans run production SQL</span></li>
-          <li data-i18n="117"><b>Learn</b><span>my correction becomes memory, a hook, a rule or a test</span></li>
+          <li data-i18n="108"><b>Requirements</b><span>user story, all branches, v1 as baseline</span></li>
+          <li data-i18n="109"><b>Capacity plan</b><span>impact analysis + token estimate per session</span></li>
+          <li data-i18n="110"><b>Development</b><span>one session per feature, isolated workspace</span></li>
+          <li data-i18n="111"><b>Dev testing</b><span>lint, types, unit tests; E2E walk in a browser</span></li>
+          <li data-i18n="112"><b>Draft PR</b><span>lightweight CI while iterating</span></li>
+          <li data-i18n="113"><b>Full CI</b><span>rules, tests, dead-code &amp; duplication report</span></li>
+          <li data-i18n="114"><b>Code review</b><span>independent agent; QC report per commit</span></li>
+          <li data-i18n="115"><b>Quality gate</b><span>QC label; human approval for risky areas</span></li>
+          <li data-i18n="116"><b>Release</b><span>controlled merge; humans run production SQL</span></li>
+          <li data-i18n="117"><b>Retrospective</b><span>each correction becomes memory, a hook, a rule or a test</span></li>
         </ol>
-        <div data-i18n="118" class="loop-note">↺ every “Learn” feeds the next “Spec”</div>
+        <div data-i18n="118" class="loop-note">↺ every retrospective feeds the next requirements</div>
       </div>
 
       <div class="fb-grid">
@@ -255,10 +255,10 @@
         <article class="fbv reveal">
           <div data-i18n="129" class="fb-q">“Test it yourself, along the real flow.”</div>
           <div class="devices" aria-hidden="true"><span class="dv desk">1440 px</span><span class="dv mob">375 px</span><span class="dv sw">v1 ⇄ v2</span></div>
-          <div class="tags"><span data-i18n="444" class="tagc">per role</span><span data-i18n="445" class="tagc">back · reload · switch flow</span><span data-i18n="446" class="tagc">I only log in</span></div>
+          <div class="tags"><span data-i18n="444" class="tagc">per role</span><span data-i18n="445" class="tagc">back · reload · switch flow</span><span data-i18n="446" class="tagc">human only logs in</span></div>
         </article>
         <article class="fbv reveal">
-          <div data-i18n="132" class="fb-q">“Give me a mechanism, not a promise.”</div>
+          <div data-i18n="132" class="fb-q">“A mechanism, not a promise.”</div>
           <ul class="checks"><li data-i18n="447">QC report for the exact commit</li><li data-i18n="448">CI green</li><li data-i18n="449">Branch up to date</li><li data-i18n="450">Human label for risky areas</li></ul>
         </article>
       </div>
@@ -314,7 +314,7 @@
     <!-- V1 TO V2 -->
     <section id="v2" class="section">
       <h2 data-i18n="157" class="reveal"><span class="num">06</span> v1 → v2: an AI-powered rebuild</h2>
-      <p data-i18n="471" class="sub reveal">Built by AI agents under my direction. Rule: copy v1 about 95%; change only for speed, privacy or maintainability.</p>
+      <p data-i18n="471" class="sub reveal">Built by AI agents under the product owner’s direction. Rule: copy v1 about 95%; change only for speed, privacy or maintainability.</p>
 
       <div class="compare reveal">
         <figure>
@@ -371,7 +371,7 @@
     <!-- LANG BIANG -->
     <section id="langbiang" class="section">
       <h2 data-i18n="310" class="reveal"><span class="num">07</span> Lang Biang EZ Water <small>2020 – 2025 · Sales Director, owner of the sales platform</small></h2>
-      <p data-i18n="480" class="sub reveal">Alkaline mineral water from Lang Biang, Lam Dong, distributed to Hanoi and the North from 2022. Besides sales, I owned the internal sales platform as product owner. Internal systems, so described, not shown.</p>
+      <p data-i18n="480" class="sub reveal">Alkaline mineral water from Lang Biang, Lam Dong, distributed to Hanoi and the North from 2022. Besides sales, owned the internal sales platform as product owner. Internal systems, so described, not shown.</p>
 
       <div class="lb-flow reveal" aria-label="Order tracking from factory to distributor">
         <div data-i18n="211" class="lb-node">Order<small>website · phone · social</small></div>
@@ -387,28 +387,28 @@
 
       <div class="lb-grid">
         <article class="lb-card reveal">
-          <h3 data-i18n="312">Order-to-cash platform</h3>
+          <h3 data-i18n="312">Order-to-cash (O2C) platform</h3>
           <div class="chain"><div class="ch p"><i aria-hidden="true">⚠</i><span data-i18n="481">Orders by web, phone, social: status unclear</span></div><div class="ch s"><i aria-hidden="true">⚙</i><span data-i18n="482">One shared order record, factory → distributor</span></div><div class="ch r"><i aria-hidden="true">✓</i><span data-i18n="483">Every order tracked, stock + debt in sync</span></div></div>
           <ul class="lb-track" aria-hidden="true"><li data-i18n="218">Order placed<span>website · phone · social</span></li><li data-i18n="219">Dispatched from factory</li><li data-i18n="220">In warehouse</li><li data-i18n="221">Received by distributor</li><li data-i18n="222">Paid, receivable closed</li></ul>
         </article>
         <article class="lb-card reveal">
-          <h3 data-i18n="319">Distributor scoring for production planning</h3>
+          <h3 data-i18n="319">RFM segmentation &amp; demand forecasting</h3>
           <div class="chain"><div class="ch p"><i aria-hidden="true">⚠</i><span data-i18n="484">Factory guessed reorder timing</span></div><div class="ch s"><i aria-hidden="true">⚙</i><span data-i18n="485">RFM scoring + reorder prediction</span></div><div class="ch r"><i aria-hidden="true">✓</i><span data-i18n="486">Production planned from predictions</span></div></div>
           <div data-i18n="225" class="rfm" aria-hidden="true"><span>R</span><span>F</span><span>M</span><em>→ next reorder</em></div>
         </article>
         <article class="lb-card reveal">
-          <h3 data-i18n="323">Referral with cashback</h3>
+          <h3 data-i18n="323">Affiliate program with cashback</h3>
           <div class="chain"><div class="ch p"><i aria-hidden="true">⚙</i><span data-i18n="487">Commission codes with cashback</span></div><div class="ch s"><i aria-hidden="true">📊</i><span data-i18n="488">Measured per affiliate and channel</span></div></div>
         </article>
         <article class="lb-card reveal">
-          <h3 data-i18n="327">Acquisition funnel</h3>
+          <h3 data-i18n="327">Acquisition funnel (B2B)</h3>
           <div class="chain"><div class="ch p"><i aria-hidden="true">⚙</i><span data-i18n="489">Content campaign + Google → Zalo journey</span></div><div class="ch s"><i aria-hidden="true">✓</i><span data-i18n="490">10 distributors, ~1B VND LTV each</span></div></div>
           <div data-i18n="230" class="lb-big"><b data-count="10">10</b><span>distributors</span><b data-count="1" data-suffix="B">1B</b><span>VND lifetime revenue each</span></div>
         </article>
         <article class="lb-card reveal">
-          <h3 data-i18n="231">Search to chat</h3>
+          <h3 data-i18n="231">SEO → conversational commerce</h3>
           <p data-i18n="491">Google → website → Zalo → order.</p>
-          <div data-i18n="233" class="serp" aria-hidden="true"><span class="q">nước lang biang</span><span class="r">#1</span><span class="r">#2</span><span class="r">#3</span><span class="r">#4</span><span class="r me">#5 · us</span></div>
+          <div data-i18n="233" class="serp" aria-hidden="true"><span class="q">nước lang biang</span><span class="r">#1</span><span class="r">#2</span><span class="r">#3</span><span class="r">#4</span><span class="r me">#5 · Lang Biang</span></div>
         </article>
       </div>
     </section>
@@ -422,7 +422,7 @@
         <span>REST · Graph API</span><span>SQL (MySQL, SQL Server)</span><span>Postman</span><span>Google Tag Manager</span><span>SendGrid events</span>
         <span>Bubble</span><span>Zapier</span><span>Make</span><span>Claude Code</span><span>Codex</span><span>MCP</span>
       </div>
-      <p data-i18n="236" class="sub reveal gamer">Off the clock: Master tier in League of Legends and Teamfight Tactics, which is where my interest in ranking, battle-pass and reward loops comes from.</p>
+      <p data-i18n="236" class="sub reveal gamer">Off the clock: Master tier in League of Legends and Teamfight Tactics, the source of a strong interest in ranking, battle-pass and reward loops.</p>
     </section>
 
     <!-- CONTACT -->
@@ -444,7 +444,7 @@
     <img alt="">
   </div>
 
-  <script src="main.js?v=8"></script>
-  <script src="i18n.js?v=8"></script>
+  <script src="main.js?v=11"></script>
+  <script src="i18n.js?v=11"></script>
 </body>
 </html>
