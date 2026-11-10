@@ -435,3 +435,4 @@ footer { text-align: center; color: var(--muted); font-size: 13px; padding: 30px
   .lb-link i { left: -2px; width: 6px; height: 8px; animation-name: shipv; }
 }
 @keyframes shipv { from { top: -8px; } to { top: 100%; } }
+@media (min-width: 1001px) { .lb-card:first-child { grid-row: span 2; } }
