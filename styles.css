@@ -486,3 +486,29 @@ a.inline-link:hover { border-bottom-color: var(--cyan); }
 .to-top.show { opacity: 1; transform: none; pointer-events: auto; }
 .to-top:hover { background: #d94c18; }
 @media (max-width: 760px) { .to-top { right: 14px; bottom: 16px; width: 42px; height: 42px; } }
+
+/* IMPACT BAND */
+.impact { max-width: 1200px; margin: 0 auto; padding: 40px clamp(16px, 6vw, 96px) 80px; }
+.impact-title { font: 800 clamp(26px, 3.6vw, 40px)/1.1 var(--display); text-transform: uppercase; margin: 0 0 28px; color: var(--text); }
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.metric { position: relative; border: 1px solid var(--line); border-radius: 20px; padding: 28px 24px 24px; background: #fff; box-shadow: 0 4px 22px rgba(0,0,0,.05); overflow: hidden; transition: transform .35s, box-shadow .35s; }
+.metric:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(240,90,34,.14); }
+.metric::before { content: ""; position: absolute; left: 0; top: 0; height: 4px; width: 0; background: var(--cyan); transition: width 1.2s cubic-bezier(.2,.8,.2,1) .2s; }
+.metric.in::before { width: 100%; }
+.metric b { display: block; font: 800 clamp(44px, 4.8vw, 68px)/1 var(--display); color: var(--cyan); letter-spacing: -1px; white-space: nowrap; margin-bottom: 12px; transform: scale(.85); opacity: 0; transition: transform .9s cubic-bezier(.2,1.4,.3,1), opacity .6s; }
+.metric.in b { transform: none; opacity: 1; }
+.metric span { display: block; color: var(--text); font-size: 15px; line-height: 1.45; max-width: 30ch; }
+.metric.ringed { padding-right: 24px; }
+.ringbox { position: relative; width: 132px; height: 132px; margin-bottom: 12px; }
+.ring { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
+.ringbox b { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; font-size: 34px; letter-spacing: 0; }
+.ring circle { fill: none; stroke-width: 10; }
+.ring .bg { stroke: #f3e2da; }
+.ring .fg { stroke: var(--cyan); stroke-linecap: round; stroke-dasharray: 327; stroke-dashoffset: 327; transition: stroke-dashoffset 1.8s cubic-bezier(.2,.8,.2,1) .3s; }
+.metric.in .ring .fg { stroke-dashoffset: calc(327 * (1 - var(--p))); }
+.pps { margin: 4px 0 12px; display: grid; grid-template-columns: auto 1fr; gap: 6px 10px; font-size: 14px; }
+.pps dt { font: 700 11px var(--mono); text-transform: uppercase; color: var(--cyan); padding-top: 3px; }
+.pps dd { margin: 0; color: var(--muted); }
+@media (max-width: 1000px) { .metrics { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .metrics { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .metric b { opacity: 1; transform: none; } .metric::before { width: 100%; } .ring .fg { stroke-dashoffset: calc(327 * (1 - var(--p))); } }

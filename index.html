@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
   <canvas id="net" aria-hidden="true"></canvas>
@@ -17,8 +17,8 @@
   <header class="nav">
     <a class="brand" href="#top">LGP<span>.</span></a>
     <nav data-i18n="0">
+      <a href="#impact">Results</a>
       <a href="#product">Product</a>
-      <a href="#proof">Live screens</a>
       <a href="#mechanics">Mechanics</a>
       <a href="#agents">AI agents</a>
       <a href="#sdlc">Lifecycle</a>
@@ -38,22 +38,29 @@
       <p class="typed reveal" aria-live="polite">I <span id="typed"></span><span class="caret">|</span></p>
       <p data-i18n="4" class="lead reveal">Sole product lead of <strong><a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork.net</a></strong>, a three-sided job platform for candidates, employers and admins. I am a product owner, not a web developer: I take requests from the business, write the spec and the test cases, and ship them myself with AI agents, usually within one sprint.</p>
       <div data-i18n="5" class="cta reveal">
-        <a class="btn primary" href="#proof">See the live product</a>
+        <a class="btn primary" href="#impact">See the results</a>
         <a class="btn ghost" href="#agents">How I use AI agents</a>
-      </div>
-      <div class="stats">
-        <div data-i18n="6" class="stat reveal"><b data-count="30000" data-suffix="+">30,000+</b><span>registered users, from zero</span></div>
-        <div data-i18n="7" class="stat reveal"><b data-count="2000">2,000</b><span>peak concurrent sessions</span></div>
-        <div data-i18n="8" class="stat reveal"><b data-count="3">3</b><span>user roles designed end to end</span></div>
-        <div data-i18n="9" class="stat reveal"><b data-count="2" data-prefix="&lt;">&lt;2</b><span>working days per large feature</span></div>
       </div>
       <a class="scroll-hint" href="#product" aria-label="Scroll down"><span></span></a>
     </section>
 
+    <!-- IMPACT -->
+    <section id="impact" class="impact">
+      <h2 data-i18n="303" class="impact-title reveal">Results in numbers</h2>
+      <div class="metrics">
+        <div class="metric reveal"><b data-count="30000" data-suffix="+">30,000+</b><span data-i18n="304">registered users on BlockchainWork, from zero</span></div>
+        <div class="metric reveal"><b data-count="2000">2,000</b><span data-i18n="305">peak concurrent sessions</span></div>
+        <div class="metric ringed reveal"><div class="ringbox"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg" cx="60" cy="60" r="52" style="--p:1"/></svg><b data-count="100" data-suffix="%">100%</b></div><span data-i18n="306">of employers post jobs on their own from their second posting, no support needed</span></div>
+        <div class="metric ringed reveal"><div class="ringbox"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg" cx="60" cy="60" r="52" style="--p:1"/></svg><b data-count="100" data-suffix="%">100%</b></div><span data-i18n="307">of candidate and employer profiles fully filled out at first onboarding, with detailed information</span></div>
+        <div class="metric reveal"><b data-count="1">1</b><span data-i18n="308">sprint from business request to release (a sprint is 3 working days), test cases included</span></div>
+        <div class="metric reveal"><b data-count="2" data-prefix="&le;">&le;2</b><span data-i18n="309">sprints to close the bugs a large scope produces</span></div>
+      </div>
+    </section>
+
     <!-- PRODUCT -->
     <section id="product" class="section">
-      <h2 data-i18n="10" class="reveal"><span class="num">01</span> <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork.net</a> <small>2022 – 2024 · Product Owner</small></h2>
-      <p data-i18n="11" class="sub reveal">Job-matching and big-data analytics platform for the blockchain industry in Vietnam. I owned vision, roadmap and delivery, took requirements straight from the board, employers and candidates, and designed and shipped every feature for all three roles on Bubble, wired to Zapier and Make over REST APIs, with custom code where Bubble hit its limits.</p>
+      <h2 data-i18n="10" class="reveal"><span class="num">01</span> <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork.net</a> <small>2020 – 2025 · Product Owner</small></h2>
+      <p data-i18n="11" class="sub reveal">Job-matching and big-data analytics platform for the blockchain industry in Vietnam. I owned vision, roadmap and delivery, took requests straight from the CEO, from business customers (employers) and from candidates, and designed and shipped every feature for all three roles on Bubble, wired to Zapier and Make over REST APIs, with custom code where Bubble hit its limits.</p>
       <div class="roles">
         <article class="role reveal tilt">
           <div class="role-ico">👤</div>
@@ -72,6 +79,8 @@
         </article>
       </div>
       <ul class="facts reveal">
+        <li data-i18n="301">Shipped large features in under 2 working days, the fastest within 1 day.</li>
+        <li data-i18n="302">As the only builder, worked directly with the no-code platform's support team to improve the builder itself: hidden elements stopped querying their data lists, and page state now loads server-side, one way, so users can no longer reach the database directly.</li>
         <li data-i18n="18">Kept infrastructure cost (Bubble Workload Units) inside the company budget while meeting UI/UX specs.</li>
         <li data-i18n="19">Monitored Bubble and Make logs hourly to trace and fix production errors.</li>
         <li data-i18n="20">Wrote HLD and SLD documents in BPMN (draw.io) for company handover.</li>
@@ -79,90 +88,10 @@
       </ul>
     </section>
 
-    <!-- PROOF -->
-    <section id="proof" class="section">
-      <h2 data-i18n="22" class="reveal"><span class="num">02</span> Live screens <small>captured from <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">blockchainwork.net</a>, Nov 2026</small></h2>
-      <p data-i18n="23" class="sub reveal">Public pages of the production v1 site, each paired with the CV line it backs up. Click a screen to enlarge.</p>
-
-      <div class="shots">
-        <figure class="shot reveal">
-          <button class="frame" data-full="assets/screens/01-home.jpg" aria-label="Enlarge: home page">
-            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net</em></span>
-            <img src="assets/screens/01-home.jpg" alt="BlockchainWork home page with separate entry points for job seekers and employers" loading="lazy">
-          </button>
-          <figcaption>
-            <h3 data-i18n="24">One home, two front doors</h3>
-            <p data-i18n="25" class="cv">“Led the platform end to end, from zero users to ~30,000 registered users and a peak of 2,000 concurrent sessions.”</p>
-            <p data-i18n="26">Separate entry points for job seekers and employers on the same landing page, with search by keyword, industry and city.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot reveal flip">
-          <button class="frame" data-full="assets/screens/02-job-feed-hot.jpg" aria-label="Enlarge: job feed with HOT placements">
-            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net · job feed</em></span>
-            <img src="assets/screens/02-job-feed-hot.jpg" alt="Home job feed where paid HOT placements are pinned with a red HOT badge" loading="lazy">
-          </button>
-          <figcaption>
-            <h3 data-i18n="27">Weighted job feed + paid HOT placement</h3>
-            <p data-i18n="28" class="cv">“Weighted job-feed ranking and paid ‘HOT’ placement, combining views, saves, posting time and time to expiry.”</p>
-            <p data-i18n="29">HOT jobs carry the red badge and sit at the top; the rest of the feed is ordered by the ranking rule.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot reveal">
-          <button class="frame" data-full="assets/screens/03-job-detail.jpg" aria-label="Enlarge: job detail page">
-            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net · job detail</em></span>
-            <img src="assets/screens/03-job-detail.jpg" alt="Job detail page with apply, save and like actions, deadline and related jobs" loading="lazy">
-          </button>
-          <figcaption>
-            <h3 data-i18n="30">Job detail built for the apply funnel</h3>
-            <p data-i18n="31" class="cv">“Designed and shipped every feature for all three roles on Bubble.”</p>
-            <p data-i18n="32">Apply, save and like actions, deadline, company tab and related jobs. Saves and views feed back into the ranking above.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot reveal flip">
-          <button class="frame" data-full="assets/screens/04-advanced-search.jpg" aria-label="Enlarge: advanced search">
-            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net · advanced search</em></span>
-            <img src="assets/screens/04-advanced-search.jpg" alt="Advanced job search with salary, remote, work type and level filters and a live update ticker of applications" loading="lazy">
-          </button>
-          <figcaption>
-            <h3 data-i18n="33">Advanced search + live activity ticker</h3>
-            <p data-i18n="34" class="cv">“Job-matching and big-data analytics platform serving candidates, employers and system admins.”</p>
-            <p data-i18n="35">Filters for currency, salary, remote, work type and level. The “Live Update” ticker shows applications as they happen, social proof driven by platform events.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot reveal">
-          <button class="frame" data-full="assets/screens/05-companies.jpg" aria-label="Enlarge: company directory">
-            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net · companies</em></span>
-            <img src="assets/screens/05-companies.jpg" alt="Directory of blockchain companies hiring on the platform" loading="lazy">
-          </button>
-          <figcaption>
-            <h3 data-i18n="36">Employer side: company directory</h3>
-            <p data-i18n="37" class="cv">“Took requirements directly from the BOD, employers and candidates.”</p>
-            <p data-i18n="38">Featured employers and a searchable company directory, each linking to its company page and open jobs.</p>
-          </figcaption>
-        </figure>
-
-        <figure class="shot reveal flip">
-          <button class="frame" data-full="assets/screens/06-forum-leaderboard.jpg" aria-label="Enlarge: forum and top contributors">
-            <span class="dots"><i></i><i></i><i></i><em>blockchainwork.net · forum</em></span>
-            <img src="assets/screens/06-forum-leaderboard.jpg" alt="Blockchain Forum with a Top contributors leaderboard" loading="lazy">
-          </button>
-          <figcaption>
-            <h3 data-i18n="39">Community + contributor leaderboard</h3>
-            <p data-i18n="40" class="cv">“Contributor leaderboard ranking candidates by views and engagement over short time windows.”</p>
-            <p data-i18n="41">The Blockchain Forum with its “Top contributors” board.</p>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
     <!-- MECHANICS -->
     <section id="mechanics" class="section">
-      <h2 data-i18n="42" class="reveal"><span class="num">03</span> Mechanics I designed <small>configurable, not one-off</small></h2>
-      <p data-i18n="43" class="sub reveal">Some of these live behind employer or admin login. Employer, admin, credit and affiliate screens are in section 07; the diagrams below show how the mechanics work, not real weights or data.</p>
+      <h2 data-i18n="42" class="reveal"><span class="num">02</span> Mechanics I designed <small>configurable, not one-off</small></h2>
+      <p data-i18n="43" class="sub reveal">Some of these live behind employer or admin login. Employer, admin, credit and affiliate screens are in section 06; the diagrams below show how the mechanics work, not real weights or data.</p>
 
       <div class="mech-grid">
         <article class="mech reveal">
@@ -217,14 +146,9 @@
 
     <!-- AGENTS -->
     <section id="agents" class="section agents">
-      <h2 data-i18n="70" class="reveal"><span class="num">04</span> How I ship with AI agents <small>BlockchainWork v2, 2026</small></h2>
-      <p data-i18n="71" class="sub reveal">No dev team. I collect requests from the business, turn each into a spec with its edge cases and test cases, and direct AI coding agents that build it in parallel. Then I test against the spec and release. Since April 2026 this is how <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork</a> is being rebuilt from Bubble into an AI-powered v2. The agents work inside guardrails they cannot switch off, and risky steps wait for a human.</p>
+      <h2 data-i18n="70" class="reveal"><span class="num">03</span> How I ship with AI agents <small>BlockchainWork v2, 2026</small></h2>
+      <p data-i18n="71" class="sub reveal">The dev team is me: one person. Requests come straight from the CEO and from business customers; I turn each into a spec with its edge cases and test cases, direct AI coding agents that build it in parallel, then test against the spec and release. Since April 2026 this is how <a class="inline-link" href="https://blockchainwork.net" target="_blank" rel="noopener">BlockchainWork</a> is being rebuilt from Bubble into an AI-powered v2. The agents work inside guardrails they cannot switch off, and risky steps wait for a human.</p>
 
-      <div class="kpis">
-        <div data-i18n="72" class="kpi reveal"><b data-count="1">1</b><span>person, from business request to release, test cases included</span></div>
-        <div data-i18n="73" class="kpi reveal"><b data-count="1">1</b><span>sprint to deliver a request (a sprint is 3 working days)</span></div>
-        <div data-i18n="74" class="kpi reveal"><b data-count="2" data-prefix="&le;">&le;2</b><span>sprints to close the bugs a large scope produces</span></div>
-      </div>
 
       <div class="pipeline reveal" id="pipeline">
         <svg class="wires" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M0 5 H100"/></svg>
@@ -269,7 +193,7 @@
 
     <!-- SDLC -->
     <section id="sdlc" class="section">
-      <h2 data-i18n="106" class="reveal"><span class="num">05</span> A standard lifecycle before full automation <small>my feedback → a mechanism → a measured result</small></h2>
+      <h2 data-i18n="106" class="reveal"><span class="num">04</span> A standard lifecycle before full automation <small>my feedback → a mechanism → a measured result</small></h2>
       <p data-i18n="107" class="sub reveal">Agents were not handed full autonomy on day one. Each time I caught a problem, the fix had to be a check the machine runs every time, not a promise from the agent. The lifecycle below is what those checks add up to.</p>
 
       <div class="cycle reveal" id="cycle" aria-label="Development lifecycle">
@@ -329,7 +253,7 @@
 
     <!-- USAGE -->
     <section id="usage" class="section">
-      <h2 data-i18n="134" class="reveal"><span class="num">06</span> Sessions, handover and token budget <small>measured from session transcripts, 10 Nov 2026</small></h2>
+      <h2 data-i18n="134" class="reveal"><span class="num">05</span> Sessions, handover and token budget <small>measured from session transcripts, 10 Nov 2026</small></h2>
       <p data-i18n="135" class="sub reveal">An agent forgets everything between sessions and slows down as its context fills. So I treat context like a budget and make handover a written artifact, not a chat memory.</p>
 
       <div class="handover reveal" aria-label="How a session hands over to the next">
@@ -376,7 +300,7 @@
 
     <!-- V1 TO V2 -->
     <section id="v2" class="section">
-      <h2 data-i18n="157" class="reveal"><span class="num">07</span> v1 → v2: an AI-powered rebuild</h2>
+      <h2 data-i18n="157" class="reveal"><span class="num">06</span> v1 → v2: an AI-powered rebuild</h2>
       <p data-i18n="158" class="sub reveal">v2 is built by AI agents under my direction, with one rule: copy v1 about 95%. The 5% that changes is where speed, privacy or maintainability demanded it. Anything else that differs from v1 counts as a bug.</p>
 
       <div class="compare reveal">
@@ -432,8 +356,8 @@
 
     <!-- LANG BIANG -->
     <section id="langbiang" class="section">
-      <h2 data-i18n="209" class="reveal"><span class="num">08</span> Lang Biang EZ Water <small>2020 – 2025 · Sales Director</small></h2>
-      <p data-i18n="210" class="sub reveal">Bottled alkaline mineral water from the Lang Biang plateau in Lam Dong, sold in formats from 280 ml bottles to 19 L jugs, with distribution reaching Hanoi and the northern provinces in 2022. The systems I built there are internal, so this part is described, not shown.</p>
+      <h2 data-i18n="310" class="reveal"><span class="num">07</span> Lang Biang EZ Water <small>2020 – 2025 · Sales Director, owner of the sales platform</small></h2>
+      <p data-i18n="311" class="sub reveal">Bottled alkaline mineral water from the Lang Biang plateau in Lam Dong, sold from 280 ml bottles to 19 L jugs and distributed as far as Hanoi and the northern provinces from 2022. Next to sales, I owned the company’s internal sales platform as its product owner. Its users were distributors, the sales team, the warehouse and the factory planner. The systems are internal, so this part is described, not shown.</p>
 
       <div class="lb-flow reveal" aria-label="Order tracking from factory to distributor">
         <div data-i18n="211" class="lb-node">Order<small>website · phone · social</small></div>
@@ -449,27 +373,41 @@
 
       <div class="lb-grid">
         <article class="lb-card reveal">
-          <h3 data-i18n="216">Order, receivables and warehouse system</h3>
-          <p data-i18n="217">Designed the sales website and the system behind it for high-value orders (100M+ VND each), tracking every order from factory dispatch to distributor intake, with order and stock data synced across website, phone and social channels.</p>
+          <h3 data-i18n="312">Order-to-cash platform</h3>
+          <dl class="pps">
+            <dt data-i18n="313">Problem</dt><dd data-i18n="314">High-value orders (100M+ VND each) came in by website, phone and social channels, and nobody could see where an order was or what was still unpaid.</dd>
+            <dt data-i18n="315">Product</dt><dd data-i18n="316">A sales website and one order record shared by every channel, with order, stock and receivable status from factory dispatch to distributor intake.</dd>
+            <dt data-i18n="317">Result</dt><dd data-i18n="318">Every order tracked end to end, with stock and receivables in sync across channels.</dd>
+          </dl>
           <ul class="lb-track" aria-hidden="true"><li data-i18n="218">Order placed<span>website · phone · social</span></li><li data-i18n="219">Dispatched from factory</li><li data-i18n="220">In warehouse</li><li data-i18n="221">Received by distributor</li><li data-i18n="222">Paid, receivable closed</li></ul>
         </article>
         <article class="lb-card reveal">
-          <h3 data-i18n="223">RFM scoring + reorder prediction</h3>
-          <p data-i18n="224">Scored distributors and prospects by recency, frequency and value of successful orders, and predicted reorder time so the factory could plan production.</p>
+          <h3 data-i18n="319">Distributor scoring for production planning</h3>
+          <dl class="pps">
+            <dt data-i18n="313">Problem</dt><dd data-i18n="320">The factory had to guess when distributors would reorder.</dd>
+            <dt data-i18n="315">Product</dt><dd data-i18n="321">RFM scoring of distributors and prospects from successful orders, plus a reorder-time prediction.</dd>
+            <dt data-i18n="317">Result</dt><dd data-i18n="322">Production planned from predicted reorders instead of guesses.</dd>
+          </dl>
           <div data-i18n="225" class="rfm" aria-hidden="true"><span>R</span><span>F</span><span>M</span><em>→ next reorder</em></div>
         </article>
         <article class="lb-card reveal">
-          <h3 data-i18n="226">Referral with cashback</h3>
-          <p data-i18n="227">Ran a commission-code programme with cashback, measured per affiliate and per channel.</p>
+          <h3 data-i18n="323">Referral with cashback</h3>
+          <dl class="pps">
+            <dt data-i18n="315">Product</dt><dd data-i18n="324">A commission-code programme with cashback, so partners earn for every order they bring.</dd>
+            <dt data-i18n="325">Metric</dt><dd data-i18n="326">Performance measured per affiliate and per channel.</dd>
+          </dl>
         </article>
         <article class="lb-card reveal">
-          <h3 data-i18n="228">Content that signed distributors</h3>
-          <p data-i18n="229">A content campaign signed 10 distributors, each worth about 1B VND in customer lifetime revenue.</p>
+          <h3 data-i18n="327">Acquisition funnel</h3>
+          <dl class="pps">
+            <dt data-i18n="315">Product</dt><dd data-i18n="328">A content campaign aimed at distributors, and a search-to-chat journey from Google into Zalo.</dd>
+            <dt data-i18n="317">Result</dt><dd data-i18n="329">10 distributors signed, each worth about 1B VND in customer lifetime revenue; top 5 on Google for “nước lang biang”.</dd>
+          </dl>
           <div data-i18n="230" class="lb-big"><b data-count="10">10</b><span>distributors</span><b data-count="1" data-suffix="B">1B</b><span>VND lifetime revenue each</span></div>
         </article>
         <article class="lb-card reveal">
           <h3 data-i18n="231">Search to chat</h3>
-          <p data-i18n="232">Ranked top 5 on Google for “nước lang biang” and designed the customer journey from the website into Zalo.</p>
+          <p data-i18n="330">Search brings buyers in; the website hands them to Zalo, where sales close the order.</p>
           <div data-i18n="233" class="serp" aria-hidden="true"><span class="q">nước lang biang</span><span class="r">#1</span><span class="r">#2</span><span class="r">#3</span><span class="r">#4</span><span class="r me">#5 · us</span></div>
         </article>
       </div>
@@ -477,7 +415,7 @@
 
     <!-- SKILLS -->
     <section class="section">
-      <h2 data-i18n="234" class="reveal"><span class="num">09</span> Toolbox</h2>
+      <h2 data-i18n="234" class="reveal"><span class="num">08</span> Toolbox</h2>
       <div data-i18n="235" class="chips reveal">
         <span>Stakeholder discovery</span><span>User stories</span><span>Business rules &amp; edge cases</span><span>BPMN · HLD/SLD</span><span>Roadmap under budget</span>
         <span>Leaderboards</span><span>Weighted ranking</span><span>Referral &amp; affiliate</span><span>Credits · cashback</span><span>RFM segmentation</span>
@@ -506,7 +444,7 @@
     <img alt="">
   </div>
 
-  <script src="main.js?v=6"></script>
-  <script src="i18n.js?v=6"></script>
+  <script src="main.js?v=7"></script>
+  <script src="i18n.js?v=7"></script>
 </body>
 </html>
