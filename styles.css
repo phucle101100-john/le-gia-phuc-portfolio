@@ -637,3 +637,20 @@ a.inline-link:hover { border-bottom-color: var(--cyan); }
   .metric b { font-size: 52px; }
   .lang-toggle { margin-left: 0; flex: 0 0 auto; }
 }
+
+/* handover tree: continuous connector from the orchestrator to the three feature sessions */
+.ho-col { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.ho-pulse { height: 28px; background: var(--cyan); opacity: .55; overflow: visible; }
+.ho-pulse::after { animation: drop2 1.6s linear infinite; }
+@keyframes drop2 { from { top: -4px; opacity: 1; } 85% { opacity: 1; } to { top: 46px; opacity: 0; } }
+.ho-kids { position: relative; padding-top: 18px; align-items: stretch; }
+.ho-kids::before { content: ""; position: absolute; top: 0; left: calc((100% - 20px) / 6); right: calc((100% - 20px) / 6); height: 2px; background: var(--cyan); opacity: .55; }
+.ho-kids .ho-node { position: relative; }
+.ho-kids .ho-node::before { content: ""; position: absolute; top: -18px; left: 50%; width: 2px; height: 18px; margin-left: -1px; background: var(--cyan); opacity: .55; }
+@media (max-width: 760px) {
+  .ho-kids { padding-top: 0; }
+  .ho-kids::before { display: none; }
+  .ho-kids .ho-node::before { top: -10px; height: 10px; }
+  .ho-pulse { height: 10px; }
+  .ho-pulse::after { display: none; }
+}
