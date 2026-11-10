@@ -689,3 +689,15 @@ a.inline-link:hover { border-bottom-color: var(--cyan); }
 .v2pt.in .cut i { width: var(--w); }
 @media (max-width: 760px) { .v2pts { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .cut i { width: var(--w); } }
+
+/* justified body text; small text in boxes bumped so justify spacing stays even */
+main p, main li, .cycle li span, .badge small, .duo-card small, .ho-node small, .lb-node small, .s2 span, .kpi span, .lb-big span, .stat span { text-align: justify; text-justify: inter-word; }
+main .typed, main .chipline, .contact p, .pf-node small { text-align: center; }
+main .typed, main .chipline { text-align: start; }
+.step p, .duo-note, .kpi span, .lb-big span, .stat span, .s2 span, .badge small, .duo-card small, .cycle li span { font-size: 14px; }
+@media (min-width: 1001px) { .step p { font-size: 14px; } }
+.ch span { font-size: 14px; text-align: justify; }
+.pf-node small { font-size: 13px; }
+/* mono labels and very narrow columns stay left-aligned (justify would leave wide gaps) */
+main .eyebrow, .mech .note, .flow li, .ho-node small, .lb-node small, .lb-track li, .cap span, main .typed { text-align: start; }
+.cycle li span { text-align: start; }
