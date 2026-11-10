@@ -7,12 +7,14 @@
       "Turns one-off requests into reusable product capabilities.",
       "Designs ranking, credits, leaderboards and referral loops.",
       "Took a job platform from zero to ~30,000 users.",
+      "Ran two products in parallel, 2020–2025.",
       "Ships business requests with AI agents, in one sprint."
     ],
     vi: [
       "Biến yêu cầu lẻ thành tính năng dùng lại được.",
       "Thiết kế xếp hạng, credit, bảng xếp hạng và vòng giới thiệu.",
       "Đưa một sàn việc làm từ 0 lên ~30.000 người dùng.",
+      "Vận hành song song hai sản phẩm, 2020–2025.",
       "Triển khai yêu cầu kinh doanh bằng AI agent, trong một sprint."
     ]
   };
