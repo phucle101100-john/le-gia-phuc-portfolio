@@ -146,13 +146,13 @@
         const a = nodes[i], b = nodes[j];
         const d = Math.hypot(a.x - b.x, a.y - b.y);
         if (d < 140) {
-          ctx.strokeStyle = `rgba(61,139,255,${(1 - d / 140) * 0.35})`;
+          ctx.strokeStyle = `rgba(240,90,34,${(1 - d / 140) * 0.25})`;
           ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
         }
       }
     }
     for (const a of nodes) {
-      ctx.fillStyle = "rgba(34,211,238,.7)";
+      ctx.fillStyle = "rgba(240,90,34,.45)";
       ctx.beginPath(); ctx.arc(a.x, a.y, 1.6, 0, Math.PI * 2); ctx.fill();
     }
     if (!reduce) requestAnimationFrame(draw);
@@ -176,7 +176,7 @@
   [250, 500, 750].forEach((v) => el("line", { x1: L, x2: W, y1: y(v), y2: y(v), class: "grid", "vector-effect": "non-scaling-stroke" }));
   el("line", { x1: L, x2: W, y1: y(MAX), y2: y(MAX), class: "ceil", "vector-effect": "non-scaling-stroke" });
   const n = data.length, slot = (W - L) / n, bw = slot * 0.68;
-  const color = (v) => v >= 900 ? "#ff3b5c" : v >= 600 ? "#f59e0b" : v >= 300 ? "#3d8bff" : "#2dd4bf";
+  const color = (v) => v >= 900 ? "#c2321f" : v >= 600 ? "#f5a35c" : v >= 300 ? "#f05a22" : "#9a9a9a";
   const bars = data.map(([d, v], i) => {
     const x = L + i * slot + (slot - bw) / 2;
     const r = el("rect", { x, width: bw, y: y(0), height: 0, rx: 2, fill: color(v) });
@@ -244,4 +244,25 @@ document.querySelectorAll(".admin-gallery").forEach((g) => {
     else if (!en.isIntersecting && t) { clearInterval(t); t = null; }
   }, { threshold: 0.25 }).observe(c);
   document.querySelectorAll(".fb").forEach((el) => new IntersectionObserver(([en], o) => { if (en.isIntersecting) { el.classList.add("in"); o.disconnect(); } }, { threshold: 0.2 }).observe(el));
+})();
+
+// Header: highlight the section in view. Back-to-top button.
+(() => {
+  const ids = [...document.querySelectorAll('.nav nav a[href^="#"]')].map((a) => a.getAttribute("href").slice(1));
+  const secs = ids.map((id) => document.getElementById(id)).filter(Boolean);
+  const top = document.getElementById("to-top");
+  const update = () => {
+    const links = document.querySelectorAll('.nav nav a[href^="#"]');
+    const y = window.scrollY + window.innerHeight * 0.35;
+    let cur = null;
+    secs.forEach((s) => { if (s.offsetTop <= y) cur = s.id; });
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4 && secs.length) cur = secs[secs.length - 1].id;
+    links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + cur));
+    if (top) top.classList.toggle("show", window.scrollY > window.innerHeight * 0.9);
+  };
+  document.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+  document.getElementById("lang-toggle")?.addEventListener("click", () => setTimeout(update, 0));
+  if (top) top.addEventListener("click", () => window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }));
 })();
