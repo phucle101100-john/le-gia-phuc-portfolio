@@ -436,3 +436,10 @@ footer { text-align: center; color: var(--muted); font-size: 13px; padding: 30px
 }
 @keyframes shipv { from { top: -8px; } to { top: 100%; } }
 @media (min-width: 1001px) { .lb-card:first-child { grid-row: span 2; } }
+.lb-track { list-style: none; margin: 4px 0 0; padding: 0 0 0 4px; display: grid; gap: 12px; position: relative; }
+.lb-track::before { content: ""; position: absolute; left: 10px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
+.lb-track li { position: relative; padding-left: 26px; font: 13px var(--mono); color: var(--muted); }
+.lb-track li span { display: block; font-size: 11px; opacity: .7; }
+.lb-track li::before { content: ""; position: absolute; left: 1px; top: 2px; width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--line); background: #0b1222; animation: tick 5s infinite; }
+.lb-track li:nth-child(2)::before { animation-delay: .8s; } .lb-track li:nth-child(3)::before { animation-delay: 1.6s; } .lb-track li:nth-child(4)::before { animation-delay: 2.4s; } .lb-track li:nth-child(5)::before { animation-delay: 3.2s; }
+@keyframes tick { 0%, 10% { background: #0b1222; border-color: var(--line); } 16%, 85% { background: var(--green); border-color: var(--green); box-shadow: 0 0 10px rgba(52,211,153,.5); } 100% { background: #0b1222; border-color: var(--line); } }
