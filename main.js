@@ -268,7 +268,7 @@ document.querySelectorAll(".admin-gallery").forEach((g) => {
     let cur = null;
     secs.forEach((s) => { if (s.offsetTop <= y) cur = s.id; });
     if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4 && secs.length) cur = secs[secs.length - 1].id;
-    links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + cur));
+    links.forEach((a) => { const on = a.getAttribute("href") === "#" + cur; if (on && !a.classList.contains("active")) { const n = a.parentElement; if (n.scrollWidth > n.clientWidth) n.scrollTo({ left: a.offsetLeft - n.clientWidth / 3, behavior: "smooth" }); } a.classList.toggle("active", on); });
     if (top) top.classList.toggle("show", window.scrollY > window.innerHeight * 0.9);
   };
   document.addEventListener("scroll", update, { passive: true });
